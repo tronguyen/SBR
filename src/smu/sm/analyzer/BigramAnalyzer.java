@@ -1,12 +1,12 @@
 package smu.sm.analyzer;
 
-import smu.sm.entity.Document;
 import smu.sm.entity.Feature;
+import smu.sm.entity.Token;
 
 public class BigramAnalyzer implements Analyzer {
 
 	@Override
-	public Feature[] analyze(Document doc) {
+	public Feature[] analyze(Token[] tokens) {
 		return null;
 	}
 
