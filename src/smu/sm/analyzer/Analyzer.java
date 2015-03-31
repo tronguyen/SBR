@@ -1,8 +1,8 @@
 package smu.sm.analyzer;
 
-import smu.sm.entity.Feature;
+import smu.sm.entity.FeatureHolder;
 import smu.sm.entity.Token;
 
 public interface Analyzer {
-	public Feature[] analyze(Token[] tokens);
+	public void analyze(Token[] tokens, FeatureHolder featureHolder);
 }

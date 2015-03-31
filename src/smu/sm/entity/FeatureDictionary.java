@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-import smu.sm.util.ObjectUtils;
+import edu.smu.utils.ObjectUtils;
 
 public class FeatureDictionary {
 	private Map<String, Integer> docFrequency = new HashMap<String, Integer>();
@@ -23,6 +23,12 @@ public class FeatureDictionary {
 			idx = featureIndexs.size() + 1;
 			featureIndexs.put(feature, idx);
 		}
+	}
+	
+	public int getDocFrequency(String feature){
+		Integer val = docFrequency.get(feature);
+		if(ObjectUtils.isNull(val)) return 0;
+		return val;
 	}
 
 	public Map<String, Integer> getFeatureIndexs() { return featureIndexs; }
