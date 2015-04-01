@@ -1,12 +1,11 @@
 package smu.sm.analyzer;
 
-import smu.sm.entity.Document;
-import smu.sm.entity.Feature;
+import smu.sm.entity.MyDocument;
+import smu.sm.entity.MyFeature;
 
-public class UnigramAnalyzer implements Analyzer {
+public class UnigramAnalyzer implements MyAnalyzer {
 
-	@Override
-	public Feature[] analyze(Document doc) {
+	public MyFeature[] analyze(MyDocument doc) {
 		return null;
 	}
 }
