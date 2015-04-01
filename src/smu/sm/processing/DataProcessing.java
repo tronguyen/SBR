@@ -15,10 +15,11 @@ import org.apache.lucene.util.Version;
 public class DataProcessing {
 	private static void indexingData() throws IOException {
 		String indexPath = "";
-		Directory dir = FSDirectory.open(new File(indexPath).toPath());
+		Directory dir = FSDirectory.open(new File(indexPath));
 
 		Analyzer analyzer = new StandardAnalyzer();
-		IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
+		IndexWriterConfig iwc = new IndexWriterConfig(Version.LUCENE_CURRENT,
+				analyzer);
 		iwc.setOpenMode(OpenMode.CREATE);
 		IndexWriter writer = new IndexWriter(dir, iwc);
 		System.out.println("????");
