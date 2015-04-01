@@ -1,11 +1,13 @@
 package smu.sm.analyzer;
 
-import smu.sm.entity.MyDocument;
-import smu.sm.entity.MyFeature;
+import smu.sm.entity.FeatureHolder;
+import smu.sm.entity.Token;
 
-public class UnigramAnalyzer implements MyAnalyzer {
-
-	public MyFeature[] analyze(MyDocument doc) {
-		return null;
+public class UnigramAnalyzer implements Analyzer {
+	private static final String PREFIX = "uni:";
+	@Override
+	public void analyze(Token[] tokens, FeatureHolder featureHolder) {
+		for(int i = 0; i < tokens.length; i++)
+			featureHolder.addFeature(PREFIX + tokens[i].getToken());
 	}
 }

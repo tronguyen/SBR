@@ -10,6 +10,8 @@ public class MyDocument implements Serializable {
 	private String description;
 	private String others;
 	
+	private String category;
+	
 	public MyDocument(){}
 	
 	public MyDocument(String documentId) {
@@ -44,4 +46,7 @@ public class MyDocument implements Serializable {
 	
 	public String getOthers() { return others; }
 	public void setOthers(String others) { this.others = others; }
+
+	public String getCategory() { return category; }
+	public void setCategory(String category) { this.category = category; }
 }

@@ -2,7 +2,7 @@ package smu.sm.entity;
 
 import java.io.Serializable;
 
-public class Document implements Serializable {
+public class MyDocument implements Serializable {
 	private static final long serialVersionUID = -4225516300931026766L;
 	
 	private String documentId;
@@ -10,21 +10,21 @@ public class Document implements Serializable {
 	private String description;
 	private String others;
 	
-	public Document(){}
+	public MyDocument(){}
 	
-	public Document(String documentId) {
+	public MyDocument(String documentId) {
 		super();
 		this.documentId = documentId;
 	}
 
-	public Document(String documentId, String title, String description) {
+	public MyDocument(String documentId, String title, String description) {
 		super();
 		this.documentId = documentId;
 		this.title = title;
 		this.description = description;
 	}
 
-	public Document(String documentId, String title, String description,
+	public MyDocument(String documentId, String title, String description,
 			String others) {
 		super();
 		this.documentId = documentId;
