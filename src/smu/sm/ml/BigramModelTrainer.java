@@ -2,8 +2,8 @@ package smu.sm.ml;
 
 import java.io.PrintStream;
 
+import smu.sm.analyzer.BigramAnalyzer;
 import smu.sm.analyzer.TargetLabelAnalyzer;
-import smu.sm.analyzer.UnigramAnalyzer;
 import smu.sm.entity.FeatureDictionary;
 import smu.sm.entity.FeatureGenerator;
 import smu.sm.entity.FeatureVector;
@@ -13,7 +13,7 @@ import smu.sm.ml.svm.svm_train;
 import smu.sm.processing.DocumentCollector;
 import smu.sm.processing.TokenGenerator;
 
-public class UnigramModelTrainer implements ModelTrainer {
+public class BigramModelTrainer implements ModelTrainer {
 
 	
 	@Override
@@ -43,7 +43,7 @@ public class UnigramModelTrainer implements ModelTrainer {
 			
 			out.close();
 			
-			String modelRes = outputDir + "\\unigram.svm.model";
+			String modelRes = outputDir + "\\bigram.svm.model";
 			svm_train trainer = new svm_train();
 			trainer.train(trainingFile, modelRes);
 			
@@ -55,7 +55,7 @@ public class UnigramModelTrainer implements ModelTrainer {
 	@Override
 	public FeatureGenerator createFeatureGenerator() {
 		FeatureGenerator fGenerator = new FeatureGenerator(
-				new UnigramAnalyzer()
+				new BigramAnalyzer()
 		);
 		fGenerator.setTargetAnalyzer(new TargetLabelAnalyzer());
 		return fGenerator;
