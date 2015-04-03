@@ -29,7 +29,7 @@ public class DataProcessing {
 
 	private String pathData = "";
 
-	private Random rd = new Random();
+	private Random rd = null;
 
 	public String getPathData() {
 		return pathData;
@@ -47,8 +47,8 @@ public class DataProcessing {
 		linkFile = pathData + "/raw/" + Global.maindata + "_" + type + ".csv";
 		br = new BufferedReader(new FileReader(new File(linkFile)));
 		while ((temp = br.readLine()) != null) {
-			String[] ins = temp.split(" ");
-			mp.put(ins[0], temp);
+			String[] ins = temp.split(" ",2);
+			mp.put(ins[0].trim(), ins[1].trim());
 		}
 		return mp;
 	}
@@ -62,7 +62,7 @@ public class DataProcessing {
 		BufferedWriter bwTrain = null, bwTest = null;
 		BufferedReader br = null;
 		Map<String, String> classData = null;
-		String label = "-1";
+		String label = "+1";
 		String id;
 		String temp = "", instance = "";
 		Set<String> trainSet = new HashSet<String>();
@@ -76,7 +76,7 @@ public class DataProcessing {
 					+ class1 + "" + class2 + "_" + type + "_test")));
 
 			br = new BufferedReader(new FileReader(f1));
-
+			rd = new Random();
 			// Pick negative instances
 			while ((temp = br.readLine()) != null) {
 				id = temp.split(",")[0];
@@ -88,8 +88,9 @@ public class DataProcessing {
 				}
 			}
 			// Pick positive instances
-			label = "+1";
+			label = "-1";
 			br = new BufferedReader(new FileReader(f2));
+			rd = new Random();
 			while ((temp = br.readLine()) != null) {
 				id = temp.split(",")[0];
 				instance = label + " " + classData.get(id).trim();

@@ -5,13 +5,20 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import smu.sm.entity.MyDocument;
+import smu.sm.global.ClassifierType;
 import smu.sm.processing.MyHelper;
 
 public class LDAClassifier extends ClassifierL2 {
+	public LDAClassifier(ClassifierType type) {
+		super(type);
+		// TODO Auto-generated constructor stub
+	}
+
 	static String path = "/Volumes/DATA/Universe/SMU/Software Mining/Project/lda_se/cmd";
 
+	// Enrich bug reports
 	public void enrichContext(MyDocument doc) {
-
+		
 	}
 
 	public void extractTopic() throws IOException, InterruptedException {
@@ -23,9 +30,16 @@ public class LDAClassifier extends ClassifierL2 {
 		System.out.println("Done!");
 	}
 
-	public void train() {
+	@Override
+	public void test() {
+		// TODO Auto-generated method stub
 
 	}
 
-	
+	@Override
+	public void train() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

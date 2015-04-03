@@ -1,10 +1,24 @@
 package smu.sm.mining;
 
-public class ClassifierL2 {
+import smu.sm.global.ClassifierType;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+public abstract class ClassifierL2 {
+	private ClassifierType type;
+
+	protected ClassifierL2(ClassifierType type) {
+		this.setType(type);
+	}
+
+	public abstract void train();
+
+	public abstract void test();
+
+	public ClassifierType getType() {
+		return type;
+	}
+
+	public void setType(ClassifierType type) {
+		this.type = type;
 	}
 
 }
