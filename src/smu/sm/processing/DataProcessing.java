@@ -7,8 +7,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.Set;
@@ -47,7 +49,7 @@ public class DataProcessing {
 		linkFile = pathData + "/raw/" + Global.maindata + "_" + type + ".csv";
 		br = new BufferedReader(new FileReader(new File(linkFile)));
 		while ((temp = br.readLine()) != null) {
-			String[] ins = temp.split(" ",2);
+			String[] ins = temp.split(" ", 2);
 			mp.put(ins[0].trim(), ins[1].trim());
 		}
 		return mp;
@@ -55,59 +57,107 @@ public class DataProcessing {
 
 	// Get a pair of class of data
 	// Class1 < Class2
-	public void exrtactPairData(int class1, int class2, ClassifierType type) {
+	public void exrtactPairData(Set<String> idLst1, Set<String> idLst2,
+			ClassifierType type, String fileID) {
 		// File contains ID of each class
-		File f1 = new File(pathData + "/bin/" + class1 + ".csv");
-		File f2 = new File(pathData + "/bin/" + class2 + ".csv");
-		BufferedWriter bwTrain = null, bwTest = null;
-		BufferedReader br = null;
+		BufferedWriter bwTrain = null;
 		Map<String, String> classData = null;
 		String label = "+1";
-		String id;
-		String temp = "", instance = "";
+		String instance = "";
 		Set<String> trainSet = new HashSet<String>();
 		Set<String> testSet = new HashSet<String>();
 		try {
 			// Get data (all classes) with feature for ClassifierType
 			classData = this.getClassData(type);
-			bwTrain = new BufferedWriter(new FileWriter(new File(pathData + "/"
-					+ class1 + "" + class2 + "_" + type + "_train")));
-			bwTest = new BufferedWriter(new FileWriter(new File(pathData + "/"
-					+ class1 + "" + class2 + "_" + type + "_test")));
+			bwTrain = new BufferedWriter(new FileWriter(new File(fileID + "_"
+					+ type)));
 
-			br = new BufferedReader(new FileReader(f1));
-			rd = new Random();
+			label = "+1";
 			// Pick negative instances
-			while ((temp = br.readLine()) != null) {
-				id = temp.split(",")[0];
+			for (String id : idLst1) {
 				instance = label + " " + classData.get(id).trim();
-				if (rd.nextDouble() < Global.crossvalid) {
-					bwTrain.write(instance + "\n");
-				} else {
-					bwTest.write(instance + "\n");
-				}
+				bwTrain.write(instance + "\n");
 			}
 			// Pick positive instances
 			label = "-1";
-			br = new BufferedReader(new FileReader(f2));
-			rd = new Random();
-			while ((temp = br.readLine()) != null) {
-				id = temp.split(",")[0];
+			for (String id : idLst2) {
 				instance = label + " " + classData.get(id).trim();
-				if (rd.nextDouble() < Global.crossvalid) {
-					bwTrain.write(instance + "\n");
-				} else {
-					bwTest.write(instance + "\n");
-				}
+				bwTrain.write(instance + "\n");
 			}
-			br.close();
-			bwTest.flush();
-			bwTest.close();
 			bwTrain.flush();
 			bwTrain.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+	}
+
+	// Get 90% ID from each class
+	public Set<String> getIDSet(int cid, BufferedWriter bw) {
+		Set<String> idLst = new HashSet<String>();
+		Random localRD = new Random();
+		String temp = "", id;
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(new File(
+					Global.csvPath + "bin/" + cid + ".csv")));
+			while ((temp = br.readLine()) != null) {
+				id = temp.split(",")[0];
+				if (localRD.nextDouble() < Global.crossvalid) {
+					idLst.add(id);
+				} else {
+					bw.write(id + "\n");
+					bw.flush();
+				}
+			}
+			br.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return idLst;
+	}
+
+	public List<Set<String>> createTrainDataFold(String linkFold) {
+		BufferedWriter bw;
+		Set<String> trainClassSet = null;
+		List<Set<String>> trainSet = new ArrayList<Set<String>>();
+		try {
+			bw = new BufferedWriter(
+					new FileWriter(new File(linkFold + "/Test")));
+			for (int t = 0; t < 4; t++) {
+				trainClassSet = getIDSet(t + 1, bw);
+				trainSet.add(trainClassSet);
+			}
+			bw.flush();
+			bw.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return trainSet;
+	}
+
+	public void factorizeData() throws IOException {
+
+		// 10-folds data
+		BufferedWriter bw;
+		String linkFold;
+		List<Set<String>> trainSet = null;
+
+		for (int i = 0; i < 10; i++) {
+			linkFold = Global.csvPath + "Folds/Fold" + (i + 1);
+			// Create data
+			trainSet = createTrainDataFold(linkFold);
+			for (int s = 0; s < 4; s++)
+				for (int l = s + 1; l < 4; l++) {
+					// Extract each pair of data
+					String fileID = linkFold + "/" + (s + 1) + "" + (l + 1);
+					for (ClassifierType type : ClassifierType.values()) {
+						exrtactPairData(trainSet.get(s), trainSet.get(l), type,
+								fileID);
+					}
+				}
+
 		}
 	}
 }

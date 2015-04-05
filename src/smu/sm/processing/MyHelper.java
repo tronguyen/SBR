@@ -7,6 +7,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import weka.core.Instance;
+
 public class MyHelper {
 	public static void refineLDAData(File ldaInput, File ldaOutput) {
 		BufferedReader br = null;
@@ -35,5 +37,41 @@ public class MyHelper {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	public static Instance createInstance(String line) {
+		Instance ins = null;
+//		try {
+//			
+//            ArrayList<Attribute> attributeList = new ArrayList<Attribute>(2);
+//
+//            Attribute latitude = new Attribute("latitude");
+//            Attribute longitude = new Attribute("longitude");
+//            Attribute carbonmonoxide = new Attribute("co");
+//
+//            ArrayList<String> classVal = new ArrayList<String>();
+//            classVal.add("ClassA");
+//            classVal.add("ClassB");
+//
+//
+//            attributeList.add(latitude);
+//            attributeList.add(longitude);
+//            attributeList.add(carbonmonoxide);
+//            attributeList.add(new Attribute("@@class@@",classVal));
+//
+//            Instances data = new Instances("TestInstances",attributeList,0);
+//
+//
+//            // Create instances for each pollutant with attribute values latitude,
+//            // longitude and pollutant itself
+//            ins = new DenseInstance(data.numAttributes());
+//            ins.setValue(latitude, lat);
+//
+//
+//        } catch (Exception e) {
+//            // TODO Auto-generated catch block
+//            e.printStackTrace();
+//        }
+		return ins;
 	}
 }
