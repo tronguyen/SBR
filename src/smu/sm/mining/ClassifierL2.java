@@ -4,11 +4,12 @@ import java.io.File;
 
 import smu.sm.global.ClassifierType;
 import weka.classifiers.Classifier;
+import weka.classifiers.misc.SerializedClassifier;
 import weka.core.Instance;
 
 public abstract class ClassifierL2 {
-	private ClassifierType type;
-	private Classifier classifier;
+	protected ClassifierType type;
+	protected Classifier classifier;
 	private double weight;
 	private int i, j;
 
@@ -36,7 +37,11 @@ public abstract class ClassifierL2 {
 		this.type = type;
 	}
 
-	public abstract void classLoader(File store);
+	public void classLoader(File store) {
+		SerializedClassifier clf = new SerializedClassifier();
+		clf.setModelFile(store);
+		this.classifier = clf;
+	}
 
 	public double getWeight() {
 		return weight;

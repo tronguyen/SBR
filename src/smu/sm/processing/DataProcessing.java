@@ -13,6 +13,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.Scanner;
 import java.util.Set;
 
 import org.apache.lucene.analysis.Analyzer;
@@ -129,6 +130,7 @@ public class DataProcessing {
 		BufferedWriter bw;
 		Set<String> trainClassSet = null;
 		List<Set<String>> trainSet = new ArrayList<Set<String>>();
+		int label;
 		try {
 			bw = new BufferedWriter(
 					new FileWriter(new File(linkFold + "/Test")));
@@ -138,6 +140,23 @@ public class DataProcessing {
 			}
 			bw.flush();
 			bw.close();
+			// Create Test File Feature
+
+			Map<String, String> classData = null;
+			for (ClassifierType type : ClassifierType.values()) {
+				classData = this.getClassData(type);
+				Scanner sc = new Scanner(new File(linkFold + "/Test"));
+				bw = new BufferedWriter(new FileWriter(new File(linkFold
+						+ "/Test" + type)));
+				while (sc.hasNext()) {
+					label = (new Random()).nextDouble() > 0.5 ? +1 : -1;
+					bw.write(label + " " + classData.get(sc.nextLine().trim())
+							+ "\n");
+				}
+				bw.flush();
+				bw.close();
+			}
+
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -166,7 +185,7 @@ public class DataProcessing {
 								fileID);
 					}
 				}
-
 		}
+
 	}
 }

@@ -113,9 +113,4 @@ public class LDAClassifier extends ClassifierL2 {
 		return val;
 	}
 
-	@Override
-	public void classLoader(File store) {
-		// TODO Auto-generated method stub
-
-	}
 }

@@ -30,11 +30,11 @@ public class WeightLearner {
 		Instance ins = null;
 		double[] w = new double[clsLst.size()];
 		int q0, q1, res;
-		DataProcessing dp = new DataProcessing();
+		// DataProcessing dp = new DataProcessing();
 		List<Map<String, Instance>> mpLst = new ArrayList<Map<String, Instance>>();
 		Map<String, Instance> mp = null;
 		for (ClassifierType type : ClassifierType.values()) {
-			mp = createFeatureMap(ID + type);
+			mp = createFeatureMap(ID + type, ID + type + "_ID");
 			mpLst.add(mp);
 		}
 		// Pick any class same ID list
@@ -79,10 +79,11 @@ public class WeightLearner {
 
 	}
 
-	public Map<String, Instance> createFeatureMap(String ID) {
+	public static Map<String, Instance> createFeatureMap(String featureLink,
+			String idLink) {
 		Map<String, Instance> mp = new HashMap<String, Instance>();
-		File featureFile = new File(ID);
-		File idFile = new File(ID + "_ID");
+		File featureFile = new File(featureLink);
+		File idFile = new File(idLink);
 		List<String> idList = new ArrayList<String>();
 		BufferedReader br;
 		try {
