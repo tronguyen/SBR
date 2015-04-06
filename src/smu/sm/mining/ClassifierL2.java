@@ -8,7 +8,7 @@ import weka.core.Instance;
 
 public abstract class ClassifierL2 {
 	private ClassifierType type;
-	protected Classifier svm;
+	private Classifier classifier;
 	private double weight;
 	private int i, j;
 
@@ -44,6 +44,14 @@ public abstract class ClassifierL2 {
 
 	public void setWeight(double weight) {
 		this.weight = weight;
+	}
+
+	public Classifier getClassifier() {
+		return classifier;
+	}
+
+	public void setClassifier(Classifier classifier) {
+		this.classifier = classifier;
 	}
 
 }

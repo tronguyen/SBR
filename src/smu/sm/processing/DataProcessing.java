@@ -66,26 +66,34 @@ public class DataProcessing {
 		String instance = "";
 		Set<String> trainSet = new HashSet<String>();
 		Set<String> testSet = new HashSet<String>();
+
 		try {
+			// Write ID corresponding to feature
+			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(
+					fileID + type + "_ID")));
 			// Get data (all classes) with feature for ClassifierType
 			classData = this.getClassData(type);
-			bwTrain = new BufferedWriter(new FileWriter(new File(fileID + "_"
-					+ type)));
+			bwTrain = new BufferedWriter(
+					new FileWriter(new File(fileID + type)));
 
 			label = "+1";
 			// Pick negative instances
 			for (String id : idLst1) {
 				instance = label + " " + classData.get(id).trim();
 				bwTrain.write(instance + "\n");
+				bw.write(id + "\n");
 			}
 			// Pick positive instances
 			label = "-1";
 			for (String id : idLst2) {
 				instance = label + " " + classData.get(id).trim();
 				bwTrain.write(instance + "\n");
+				bw.write(id + "\n");
 			}
 			bwTrain.flush();
 			bwTrain.close();
+			bw.flush();
+			bw.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -144,8 +152,9 @@ public class DataProcessing {
 		String linkFold;
 		List<Set<String>> trainSet = null;
 
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < Global.folds; i++) {
 			linkFold = Global.csvPath + "Folds/Fold" + (i + 1);
+			new File(linkFold).mkdir();
 			// Create data
 			trainSet = createTrainDataFold(linkFold);
 			for (int s = 0; s < 4; s++)

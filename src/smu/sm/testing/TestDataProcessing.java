@@ -7,6 +7,7 @@ import smu.sm.global.ClassifierType;
 import smu.sm.global.Global;
 import smu.sm.mining.ClassifierL2;
 import smu.sm.mining.LDAClassifier;
+import smu.sm.mining.WeightLearner;
 import smu.sm.processing.DataProcessing;
 import smu.sm.processing.MyHelper;
 
@@ -32,11 +33,16 @@ public class TestDataProcessing {
 	public static void main(String[] args) throws IOException,
 			InterruptedException {
 		// TODO Auto-generated method stub
-		TestDataProcessing test = new TestDataProcessing();
+//		 TestDataProcessing test = new TestDataProcessing();
 		// test.testLDARefine();
-		test.testCreateCrossData();
-		// LDAClassifier cls = new LDAClassifier(ClassifierType.LDA);
+//		 test.testCreateCrossData();
+
+//		 ClassifierL2 cls = new LDAClassifier(ClassifierType.LDA);
 		// cls.extractTopic();
+//		 cls.train();
+
+		WeightLearner wl = new WeightLearner();
+		wl.factorizeWeight();
 	}
 
 }

@@ -24,8 +24,9 @@ public class LDAClassifier extends ClassifierL2 {
 		super(type);
 		// TODO Auto-generated constructor stub
 	}
+
 	public LDAClassifier(int i, int j, ClassifierType type) {
-		super(i,j,type);
+		super(i, j, type);
 	}
 
 	static String path = Global.csvPath + "script";
@@ -65,24 +66,31 @@ public class LDAClassifier extends ClassifierL2 {
 	@Override
 	public void train() {
 		// TODO Auto-generated method stub
-		SVMLightLoader loader = new SVMLightLoader();
+		SVMLightLoader loader;
 		Instances traindata = null;
-
+		String linkData, linkModel;
 		String modelID = "";
 		try {
-			for (int i = 1; i <= 4; i++)
-				for (int j = i + 1; j <= 4; j++) {
-					// Get pair data
-					modelID = i + "" + j + "_" + this.getType();
-					loader.setSource(new FileInputStream(new File(
-							Global.csvPath + modelID + "_train")));
-					traindata = loader.getDataSet();
-					// Training with svm
-					svm = new LibSVM();
-					svm.buildClassifier(traindata);
-					// Write down learned model
-					Debug.saveToFile(Global.csvPath + "model/" + modelID, svm);
-				}
+			for (int f = 0; f < Global.folds; f++) {
+				linkData = Global.csvPath + "Folds/Fold" + (f + 1) + "/";
+				linkModel = Global.csvPath + "model/Fold" + (f + 1) + "/";
+				new File(linkModel).mkdir();
+				for (int i = 1; i <= 4; i++)
+					for (int j = i + 1; j <= 4; j++) {
+						// Get pair data
+						modelID = i + "" + j + this.getType();
+						loader = new SVMLightLoader();
+						loader.setSource(new FileInputStream(new File(linkData
+								+ modelID)));
+						traindata = loader.getDataSet();
+						// Training with svm
+						setClassifier(new LibSVM());
+						getClassifier().buildClassifier(traindata);
+						// Write down learned model
+						Debug.saveToFile(linkModel + modelID + ".model",
+								getClassifier());
+					}
+			}
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -96,7 +104,7 @@ public class LDAClassifier extends ClassifierL2 {
 		// TODO Auto-generated method stub
 		double val = 0;
 		try {
-			val = this.svm.classifyInstance(ins);
+			val = this.getClassifier().classifyInstance(ins);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			System.out.println("Exception in prediction!!!");
