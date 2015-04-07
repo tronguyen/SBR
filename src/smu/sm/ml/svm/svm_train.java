@@ -30,8 +30,7 @@ public class svm_train {
 		run(new String[]{inputFile, modelRes});
 	}
 
-	private static void exit_with_help()
-	{
+	private static void printHelp() {
 		System.out.print(
 		 "Usage: svm_train [options] training_set_file [model_file]\n"
 		+"options:\n"
@@ -64,8 +63,7 @@ public class svm_train {
 		System.exit(1);
 	}
 
-	private void do_cross_validation()
-	{
+	private void do_cross_validation() {
 		int i;
 		int total_correct = 0;
 		double total_error = 0;
@@ -75,8 +73,7 @@ public class svm_train {
 		svm.svm_cross_validation(prob,param,nr_fold,target);
 		if(param.svm_type == svm_parameter.EPSILON_SVR ||
 		   param.svm_type == svm_parameter.NU_SVR) {
-			for(i=0;i<prob.l;i++)
-			{
+			for(i=0;i<prob.l;i++) {
 				double y = prob.y[i];
 				double v = target[i];
 				total_error += (v-y)*(v-y);
@@ -91,9 +88,7 @@ public class svm_train {
 				((prob.l*sumvy-sumv*sumy)*(prob.l*sumvy-sumv*sumy))/
 				((prob.l*sumvv-sumv*sumv)*(prob.l*sumyy-sumy*sumy))+"\n"
 				);
-		}
-		else
-		{
+		} else {
 			for(i=0;i<prob.l;i++)
 				if(target[i] == prob.y[i])
 					++total_correct;
@@ -101,8 +96,7 @@ public class svm_train {
 		}
 	}
 	
-	private void run(String argv[]) throws IOException
-	{
+	private void run(String argv[]) throws IOException {
 		parse_command_line(argv);
 		read_problem();
 		error_msg = svm.svm_check_parameter(prob,param);
@@ -141,13 +135,11 @@ public class svm_train {
 		return(d);
 	}
 
-	private static int atoi(String s)
-	{
+	private static int atoi(String s) {
 		return Integer.parseInt(s);
 	}
 
-	private void parse_command_line(String argv[])
-	{
+	private void parse_command_line(String argv[]) {
 		int i;
 		svm_print_interface print_func = null;	// default printing to stdout
 
@@ -173,7 +165,7 @@ public class svm_train {
 		for(i=0;i<argv.length;i++) {
 			if(argv[i].charAt(0) != '-') break;
 			if(++i>=argv.length)
-				exit_with_help();
+				printHelp();
 			switch(argv[i-1].charAt(1))
 			{
 				case 's':
@@ -219,10 +211,9 @@ public class svm_train {
 				case 'v':
 					cross_validation = 1;
 					nr_fold = atoi(argv[i]);
-					if(nr_fold < 2)
-					{
+					if(nr_fold < 2) {
 						System.err.print("n-fold cross validation: n must >= 2\n");
-						exit_with_help();
+						printHelp();
 					}
 					break;
 				case 'w':
@@ -244,7 +235,7 @@ public class svm_train {
 					break;
 				default:
 					System.err.print("Unknown option: " + argv[i-1] + "\n");
-					exit_with_help();
+					printHelp();
 			}
 		}
 
@@ -253,14 +244,13 @@ public class svm_train {
 		// determine filenames
 
 		if(i>=argv.length)
-			exit_with_help();
+			printHelp();
 
 		input_file_name = argv[i];
 
-		if(i<argv.length-1)
+		if(i < argv.length-1)
 			model_file_name = argv[i+1];
-		else
-		{
+		else {
 			int p = argv[i].lastIndexOf('/');
 			++p;	// whew...
 			model_file_name = argv[i].substring(p)+".model";
@@ -269,15 +259,13 @@ public class svm_train {
 
 	// read in a problem (in svmlight format)
 
-	private void read_problem() throws IOException
-	{
+	private void read_problem() throws IOException {
 		BufferedReader fp = new BufferedReader(new FileReader(input_file_name));
 		Vector<Double> vy = new Vector<Double>();
 		Vector<svm_node[]> vx = new Vector<svm_node[]>();
 		int max_index = 0;
 
-		while(true)
-		{
+		while(true) {
 			String line = fp.readLine();
 			if(line == null) break;
 
@@ -309,8 +297,7 @@ public class svm_train {
 			param.gamma = 1.0/max_index;
 
 		if(param.kernel_type == svm_parameter.PRECOMPUTED)
-			for(int i=0;i<prob.l;i++)
-			{
+			for(int i=0;i<prob.l;i++) {
 				if (prob.x[i][0].index != 0)
 				{
 					System.err.print("Wrong kernel matrix: first column must be 0:sample_serial_number\n");
