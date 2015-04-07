@@ -1,6 +1,9 @@
 package smu.sm.entity;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import smu.sm.util.MLUtils;
@@ -47,13 +50,33 @@ public class FeatureVector {
 		
 		buffer.append(targetFeature);
 		
-		for(String key: features.keySet()){
+		String[] sortKeys = sortKeyByIndex(dict);
+		
+		for(String key: sortKeys){
 			MyFeature feature = features.get(key);
 			int featureIdx = dict.getFeatureIndex(key);
 			buffer.append(" ").append(featureIdx).append(":").append(feature.getWeight());
 		}
 		
 		return buffer.toString().trim();
+	}
+	
+	public String[] sortKeyByIndex(FeatureDictionary dict){
+		Map<String, String> tmpMap = new HashMap<String, String>();
+		List<Integer> indexs = new ArrayList<Integer>();
+
+		for(String key: features.keySet()){
+			int index = dict.getFeatureIndex(key);
+			tmpMap.put("Index-" + index, key);
+			indexs.add(index);
+		}
+
+		String[] returnTerms = new String[indexs.size()];
+		Collections.sort(indexs);
+		for(int i = 0; i < indexs.size(); i++){
+			returnTerms[i] = tmpMap.get("Index-" + indexs.get(i));
+		}
+		return returnTerms;
 	}
 	
 	public double getValue(){
