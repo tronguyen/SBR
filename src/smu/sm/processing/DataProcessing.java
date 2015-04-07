@@ -47,7 +47,7 @@ public class DataProcessing {
 		Map<String, String> mp = new HashMap<String, String>();
 		BufferedReader br = null;
 		String linkFile = "", temp = "";
-		linkFile = pathData + "/raw/" + Global.maindata + "_" + type + ".csv";
+		linkFile = pathData + "raw/" + Global.maindata + "_" + type + ".csv";
 		br = new BufferedReader(new FileReader(new File(linkFile)));
 		while ((temp = br.readLine()) != null) {
 			String[] ins = temp.split(" ", 2);
@@ -71,7 +71,7 @@ public class DataProcessing {
 		try {
 			// Write ID corresponding to feature
 			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(
-					fileID + type + "_ID")));
+					fileID + "_ID")));
 			// Get data (all classes) with feature for ClassifierType
 			classData = this.getClassData(type);
 			bwTrain = new BufferedWriter(
@@ -108,7 +108,8 @@ public class DataProcessing {
 		String temp = "", id;
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(new File(
-					Global.csvPath + "bin/" + cid + ".csv")));
+					Global.csvPath + "bin/" + Global.maindata + "/" + cid
+							+ ".csv")));
 			while ((temp = br.readLine()) != null) {
 				id = temp.split(",")[0];
 				if (localRD.nextDouble() < Global.crossvalid) {
@@ -172,7 +173,8 @@ public class DataProcessing {
 		List<Set<String>> trainSet = null;
 
 		for (int i = 0; i < Global.folds; i++) {
-			linkFold = Global.csvPath + "Folds/Fold" + (i + 1);
+			linkFold = Global.csvPath + "Folds/" + Global.maindata + "/Fold"
+					+ (i + 1);
 			new File(linkFold).mkdir();
 			// Create data
 			trainSet = createTrainDataFold(linkFold);

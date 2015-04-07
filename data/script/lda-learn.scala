@@ -12,7 +12,7 @@ import edu.stanford.nlp.tmt.stage._;
 import edu.stanford.nlp.tmt.model.lda._;
 import edu.stanford.nlp.tmt.model.llda._;
 
-val source = CSVFile("../raw/microsoft.csv") ~> IDColumn(1);
+val source = CSVFile("../raw/microsoft_nother.csv") ~> IDColumn(1);
 
 val tokenizer = {
   SimpleEnglishTokenizer() ~>            // tokenize on space and punctuation
@@ -26,16 +26,16 @@ val text = {
   Column(3) ~>                           // select column containing text
   TokenizeWith(tokenizer) ~>             // tokenize with tokenizer above
   TermCounter() ~>                       // collect counts (needed below)
-  TermMinimumDocumentCountFilter(4) ~>   // filter terms in <4 docs
+  TermMinimumDocumentCountFilter(3) ~>   // filter terms in <4 docs
   TermDynamicStopListFilter(100) ~>       // filter out 30 most common terms
-  DocumentMinimumLengthFilter(5)         // take only docs with >=5 terms
+  DocumentMinimumLengthFilter(0)         // take only docs with >=5 terms
 }
 
 // turn the text into a dataset ready to be used with LDA
 val dataset = LDADataset(text);
 
 // define the model parameters
-val params = LDAModelParams(numTopics = 20, dataset = dataset,
+val params = LDAModelParams(numTopics = 30, dataset = dataset,
   topicSmoothing = 0.01, termSmoothing = 0.01);
 
 // Name of the output model folder to generate

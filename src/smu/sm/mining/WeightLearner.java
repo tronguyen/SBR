@@ -34,11 +34,11 @@ public class WeightLearner {
 		List<Map<String, Instance>> mpLst = new ArrayList<Map<String, Instance>>();
 		Map<String, Instance> mp = null;
 		for (ClassifierType type : ClassifierType.values()) {
-			mp = createFeatureMap(ID + type, ID + type + "_ID");
+			mp = createFeatureMap(ID + type, ID + "_ID");
 			mpLst.add(mp);
 		}
 		// Pick any class same ID list
-		File valid = new File(ID + ClassifierType.LDA + "_ID");
+		File valid = new File(ID + "_ID");
 		// Initialize weight for each classifier
 		for (int k = 0; k < clsLst.size(); k++) {
 			w[k] = 1;
@@ -67,7 +67,7 @@ public class WeightLearner {
 			}
 			// Write down weights
 			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(ID
-					+ ".w")));
+					+ "_w")));
 			for (int k = 0; k < clsLst.size(); k++) {
 				bw.write(w[k] + "\n");
 			}
@@ -128,8 +128,10 @@ public class WeightLearner {
 		ClassifierL2 cls = null;
 		List<ClassifierL2> clsLst;
 		for (int f = 0; f < Global.folds; f++) {
-			linkData = Global.csvPath + "Folds/Fold" + (f + 1) + "/";
-			linkModel = Global.csvPath + "model/Fold" + (f + 1) + "/";
+			linkData = Global.csvPath + "Folds/" + Global.maindata + "/Fold"
+					+ (f + 1) + "/";
+			linkModel = Global.csvPath + "model/" + Global.maindata + "/Fold"
+					+ (f + 1) + "/";
 			for (int i = 1; i <= 4; i++)
 				for (int j = i + 1; j <= 4; j++) {
 					clsLst = new ArrayList<ClassifierL2>();
@@ -140,6 +142,12 @@ public class WeightLearner {
 						classifier = new SerializedClassifier();
 						classifier.setModelFile(new File(linkModel + modelID));
 						switch (type) {
+						case UNI:
+							cls = new UNIClassifier(type);
+							break;
+						case BIG:
+							cls = new BIGClassifier(type);
+							break;
 						case LDA:
 							cls = new LDAClassifier(type);
 							break;

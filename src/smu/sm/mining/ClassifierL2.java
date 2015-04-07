@@ -1,11 +1,17 @@
 package smu.sm.mining;
 
 import java.io.File;
+import java.io.FileInputStream;
 
 import smu.sm.global.ClassifierType;
+import smu.sm.global.Global;
 import weka.classifiers.Classifier;
+import weka.classifiers.functions.LibSVM;
 import weka.classifiers.misc.SerializedClassifier;
+import weka.core.Debug;
 import weka.core.Instance;
+import weka.core.Instances;
+import weka.core.converters.SVMLightLoader;
 
 public abstract class ClassifierL2 {
 	protected ClassifierType type;
@@ -23,11 +29,57 @@ public abstract class ClassifierL2 {
 		this.j = j;
 	}
 
-	public abstract void train();
+	public void train() {
+		// TODO Auto-generated method stub
+		SVMLightLoader loader;
+		Instances traindata = null;
+		String linkData, linkModel;
+		String modelID = "";
+		try {
+			for (int f = 0; f < Global.folds; f++) {
+				linkData = Global.csvPath + "Folds/" + Global.maindata
+						+ "/Fold" + (f + 1) + "/";
+				linkModel = Global.csvPath + "model/" + Global.maindata
+						+ "/Fold" + (f + 1) + "/";
+				new File(linkModel).mkdir();
+				for (int i = 1; i <= 4; i++)
+					for (int j = i + 1; j <= 4; j++) {
+						// Get pair data
+						modelID = i + "" + j + this.getType();
+						loader = new SVMLightLoader();
+						loader.setSource(new FileInputStream(new File(linkData
+								+ modelID)));
+						traindata = loader.getDataSet();
+						// Training with svm
+						setClassifier(new LibSVM());
+						getClassifier().buildClassifier(traindata);
+						// Write down learned model
+						Debug.saveToFile(linkModel + modelID + ".model",
+								getClassifier());
+					}
+			}
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
 
 	public abstract void test();
 
-	public abstract double predict(Instance ins);
+	public double predict(Instance ins) {
+		// TODO Auto-generated method stub
+		double val = 0;
+		try {
+			val = this.getClassifier().classifyInstance(ins);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println("Exception in prediction!!!");
+			e.printStackTrace();
+		}
+		return val;
+	}
 
 	public ClassifierType getType() {
 		return type;

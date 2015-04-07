@@ -47,19 +47,21 @@ public class Voting {
 		for (int i = 1; i <= 4; i++)
 			for (int j = i + 1; j <= 4; j++) {
 				List<ClassifierL2> subLst = new ArrayList<ClassifierL2>();
-				Scanner sc = new Scanner(new File(linkData + i + "" + j + ".w"));
+				Scanner sc = new Scanner(new File(linkData + i + "" + j + "_w"));
 				for (ClassifierType type : ClassifierType.values()) {
 					modelID = i + "" + j + type;
 					temp = new File(linkModel + modelID + ".model");
 					// Get weights
 					weight = sc.nextDouble();
 					switch (type) {
-					// case UNIGRAM:
-					// break;
-					// case BIGRAM:
-					// break;
+					case UNI:
+						tempCls = new UNIClassifier(type);
+						break;
+					case BIG:
+						tempCls = new BIGClassifier(type);
+						break;
 					case LDA:
-						tempCls = new LDAClassifier(i, j, type);
+						tempCls = new LDAClassifier(type);
 						break;
 					}
 					tempCls.setWeight(weight);
@@ -83,7 +85,6 @@ public class Voting {
 			while ((idnum = br.readLine()) != null) {
 				c = new int[4];
 				for (String key : allClassifiers.keySet()) {
-					if(!key.equals("2_3")) continue;
 					String[] classIdex = key.split("_");
 					res = pairVote(allClassifiers.get(key), idnum);
 					// Count voting
@@ -99,7 +100,7 @@ public class Voting {
 					if (c[max] < c[j])
 						max = j;
 				}
-				bw.write((max + 1) + "\n"); 
+				bw.write((max + 1) + "\n");
 			}
 			bw.flush();
 			bw.close();
