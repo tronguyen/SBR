@@ -40,12 +40,13 @@ public class FeatureVectorGenerator {
 	}
 	
 	public static void main(String[] args) throws Exception{
-		String inputDir = "data/raw2/microsoft";
-		String outputFile = "data/raw2/microsoft_big.txt";
+		String inputDir = "data/raw2/linux";
+		String outputFile = "data/raw2/linux_big.txt";
 		
 		FeatureGenerator fGenerator = new FeatureGenerator(
 				new BigramAnalyzer()
 		);
+		
 		
 		FeatureVectorGenerator.generate(inputDir, fGenerator, outputFile);
 		

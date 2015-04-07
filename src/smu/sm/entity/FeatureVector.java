@@ -58,6 +58,9 @@ public class FeatureVector {
 			buffer.append(" ").append(featureIdx).append(":").append(feature.getWeight());
 		}
 		
+		int maxIdx = dict.getFeatureIndexs().size() + 2;
+		buffer.append(" ").append(maxIdx).append(":").append(0);
+		
 		return buffer.toString().trim();
 	}
 	
