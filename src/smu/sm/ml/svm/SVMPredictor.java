@@ -1,9 +1,20 @@
 package smu.sm.ml.svm;
-import libsvm.*;
-import java.io.*;
-import java.util.*;
+import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.StringTokenizer;
 
-class SVMPredictor {
+import libsvm.svm;
+import libsvm.svm_model;
+import libsvm.svm_node;
+import libsvm.svm_parameter;
+import libsvm.svm_print_interface;
+
+public class SVMPredictor {
 	private static svm_print_interface svm_print_null = new svm_print_interface() {
 		public void print(String s) {}
 	};
@@ -31,7 +42,7 @@ class SVMPredictor {
 	{
 		return Integer.parseInt(s);
 	}
-
+	
 	private static void predict(BufferedReader input, DataOutputStream output, svm_model model, int predict_probability) throws IOException{
 		int correct = 0;
 		int total = 0;
@@ -125,7 +136,7 @@ class SVMPredictor {
 		System.exit(1);
 	}
 
-	public static void main(String argv[]) throws IOException
+	public static void run(String argv[]) throws IOException
 	{
 		int i, predict_probability=0;
         	svm_print_string = svm_print_stdout;
@@ -188,5 +199,9 @@ class SVMPredictor {
 		{
 			exit_with_help();
 		}
+	}
+	
+	public void predictFile(String testFile, String modelRes, String outputFile) throws IOException{
+		run(new String[]{testFile, modelRes, outputFile});
 	}
 }

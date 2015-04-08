@@ -72,7 +72,7 @@ public class Evaluator {
 		String[] dataset = new String[]{"linux", "microsoft"};
 
 		for(String dat: dataset){
-			String foldDir = "D:/Program/sm/FinalProject/data/test/" + dat;
+			String foldDir = "D:/Program/sm/FinalProject/data/" + dat;
 			String labeledDirectory = "data/raw2/" + dat; 
 			
 			Evaluator eval = new Evaluator();
