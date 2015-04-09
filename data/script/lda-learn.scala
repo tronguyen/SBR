@@ -35,7 +35,7 @@ val text = {
 val dataset = LDADataset(text);
 
 // define the model parameters
-val params = LDAModelParams(numTopics = 30, dataset = dataset,
+val params = LDAModelParams(numTopics = 100, dataset = dataset,
   topicSmoothing = 0.01, termSmoothing = 0.01);
 
 // Name of the output model folder to generate
