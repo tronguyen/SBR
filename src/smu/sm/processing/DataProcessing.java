@@ -130,19 +130,44 @@ public class DataProcessing {
 	public List<Set<String>> createTrainDataFold(String linkFold) {
 		BufferedWriter bw;
 		Set<String> trainClassSet = null;
+		Set<String> validCLassSet = null;
+		Set<String> tempClassSet = null;
 		List<Set<String>> trainSet = new ArrayList<Set<String>>();
+		List<Set<String>> validSet = new ArrayList<Set<String>>();
 		int label;
 		try {
 			bw = new BufferedWriter(
 					new FileWriter(new File(linkFold + "/Test")));
 			for (int t = 0; t < 4; t++) {
-				trainClassSet = getIDSet(t + 1, bw);
+				tempClassSet = getIDSet(t + 1, bw);
+				trainClassSet = new HashSet<String>();
+				validCLassSet = new HashSet<String>();
+				Random r = new Random();
+				for (String s : tempClassSet) {
+					if (r.nextDouble() < Global.crossvalid) {
+						trainClassSet.add(s);
+					} else {
+						validCLassSet.add(s);
+					}
+				}
 				trainSet.add(trainClassSet);
+				validSet.add(validCLassSet);
 			}
 			bw.flush();
 			bw.close();
-			// Create Test File Feature
+			// Create valid feature
+			for (int s = 0; s < 4; s++)
+				for (int l = s + 1; l < 4; l++) {
+					// Extract each pair of data
+					String fileID = linkFold + "/" + (s + 1) + "" + (l + 1)
+							+ "valid";
+					for (ClassifierType type : ClassifierType.values()) {
+						exrtactPairData(validSet.get(s), validSet.get(l), type,
+								fileID);
+					}
+				}
 
+			// Create Test File Feature
 			Map<String, String> classData = null;
 			for (ClassifierType type : ClassifierType.values()) {
 				classData = this.getClassData(type);

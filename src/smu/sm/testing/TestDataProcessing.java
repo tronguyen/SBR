@@ -56,20 +56,20 @@ public class TestDataProcessing {
 			InterruptedException {
 		// TODO Auto-generated method stub
 		TestDataProcessing test = new TestDataProcessing();
-//		 test.testLDARefine();
-		test.testCreateCrossData();
+		 test.testLDARefine();
+//		test.testCreateCrossData();
+//
+//		ClassifierL2 cls = null;
+//		cls = new LDAClassifier(ClassifierType.LDA);
+//		cls.train();
+//		cls = new UNIClassifier(ClassifierType.UNI);
+//		cls.train();
+//		cls = new BIGClassifier(ClassifierType.BIG);
+//		cls.train();
 
-		ClassifierL2 cls = null;
-		cls = new LDAClassifier(ClassifierType.LDA);
-		cls.train();
-		cls = new UNIClassifier(ClassifierType.UNI);
-		cls.train();
-		cls = new BIGClassifier(ClassifierType.BIG);
-		cls.train();
-
-		WeightLearner wl = new WeightLearner();
-		wl.factorizeWeight();
-		test.testVoting();
+//		WeightLearner wl = new WeightLearner();
+//		wl.factorizeWeight();
+//		test.testVoting();
 	}
 
 }

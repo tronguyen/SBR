@@ -60,9 +60,9 @@ public class Voting {
 					case BIG:
 						tempCls = new BIGClassifier(type);
 						break;
-					case LDA:
-						tempCls = new LDAClassifier(type);
-						break;
+//					case LDA:
+//						tempCls = new LDAClassifier(type);
+//						break;
 					}
 					tempCls.setWeight(weight);
 					tempCls.classLoader(temp);

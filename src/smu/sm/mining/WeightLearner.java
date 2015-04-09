@@ -34,11 +34,11 @@ public class WeightLearner {
 		List<Map<String, Instance>> mpLst = new ArrayList<Map<String, Instance>>();
 		Map<String, Instance> mp = null;
 		for (ClassifierType type : ClassifierType.values()) {
-			mp = createFeatureMap(ID + type, ID + "_ID");
+			mp = createFeatureMap(ID + "valid" + type, ID + "valid_ID");
 			mpLst.add(mp);
 		}
 		// Pick any class same ID list
-		File valid = new File(ID + "_ID");
+		File valid = new File(ID + "valid_ID");
 		// Initialize weight for each classifier
 		for (int k = 0; k < clsLst.size(); k++) {
 			w[k] = 1;
@@ -148,9 +148,9 @@ public class WeightLearner {
 						case BIG:
 							cls = new BIGClassifier(type);
 							break;
-						case LDA:
-							cls = new LDAClassifier(type);
-							break;
+//						case LDA:
+//							cls = new LDAClassifier(type);
+//							break;
 						}
 						cls.setClassifier(classifier);
 						clsLst.add(cls);
