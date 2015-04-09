@@ -69,7 +69,7 @@ public class Evaluator {
 
 
 	public static void main(String[] args){
-		String[] dataset = new String[]{"linux", "microsoft"};
+		String[] dataset = new String[]{"linux"};
 
 		for(String dat: dataset){
 			String foldDir = "D:/Program/sm/FinalProject/data/" + dat;
