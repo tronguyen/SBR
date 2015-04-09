@@ -14,7 +14,7 @@ import edu.smu.utils.StringUtils;
 public class DataMerger {
 	private static final String[] TARGET_LABELS = new String[]{"CWE-119", "CWE-20", "CWE-264", "CWE-399"};
 	
-	public void merge(String foldDir) throws IOException {
+	public void merge(String foldDir, String rawVectorDir, boolean oneClass) throws IOException {
 		String dataset = FileUtils.getBaseName(foldDir);
 		
 		Map<String, String> actualLabels = getActualLabel("data/raw2/" + dataset);
@@ -41,12 +41,16 @@ public class DataMerger {
 			}
 			
 			for(String model: models){
-				String[] lines = FileUtils.readLines(foldDir + "/" + dataset + "_" + model + ".csv");
+				String[] lines = FileUtils.readLines(rawVectorDir + "/" + dataset + "_" + model + ".csv");
 				
-				PrintStream trainOut = new PrintStream(foldPath + "/" + dataset + "_" + model + "_train.txt");
-				PrintStream testFeatureOut = new PrintStream(foldPath + "/" + dataset + "_" + model + "_fVector_test.txt");
-				PrintStream testLabelOut = new PrintStream(foldPath + "/" + dataset + "_" + model + "_label_test.txt");
+				String commonPath = foldPath + "/" + dataset + "_" + model;
+				if(oneClass) commonPath += "_1Class";
 				
+				PrintStream trainOut = new PrintStream(commonPath + "_train.txt");
+				PrintStream testFeatureOut = new PrintStream(commonPath + "_fVector_test.txt");
+				PrintStream testLabelOut = new PrintStream(commonPath + "_label_test.txt");
+				
+				int count = 0;
 				for(String line: lines){
 					if(line.contains("NaN")) continue;
 					
@@ -57,10 +61,19 @@ public class DataMerger {
 					String actualLabel = actualLabels.get(documentId);
 					String printLabel = getPrintTargetFeature(actualLabel);
 					
+					if(oneClass && !StringUtils.isNullOrEmpty(printLabel)) printLabel = "1";
+					else if (oneClass && StringUtils.isNullOrEmpty(printLabel)) printLabel = "-1";
+					
 					if(trainSet.contains(documentId)) trainOut.println(printLabel + " " + fVector);
 					if(testSet.contains(documentId)) {
 						testFeatureOut.println(printLabel + " " + fVector);
 						testLabelOut.println(printLabel);
+					}
+					
+					if(printLabel == "-1" && count < testSet.size()){
+						testFeatureOut.println(printLabel + " " + fVector);
+						testLabelOut.println(printLabel);
+						count++;
 					}
 				}
 				
@@ -88,11 +101,12 @@ public class DataMerger {
 	}
 	
 	public static void main(String[] args) throws IOException{
-		String foldDir = "D:/Program/sm/FinalProject/data/microsoft";
+		String foldDir = "data/Folds/microsoft";
+		String rawVectorDir = "data/raw";
 		
 		
 		DataMerger merger = new DataMerger();
-		merger.merge(foldDir);
+		merger.merge(foldDir, rawVectorDir, true);
 				
 	}
 

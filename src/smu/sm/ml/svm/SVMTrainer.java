@@ -26,8 +26,11 @@ public class SVMTrainer {
 		public void print(String s) {}
 	};
 	
-	public void train(String inputFile, String modelRes) throws IOException{
+	public void train(String inputFile, String modelRes, boolean oneClass) throws IOException{
+		if(!oneClass)
 			run(new String[]{"-s", "0", inputFile, modelRes});
+		else 
+			run(new String[]{"-s", "2", inputFile, modelRes});
 	}
 	
 	public void crossValidation(String inputFile, String modelRes, int nbFolds) throws IOException{

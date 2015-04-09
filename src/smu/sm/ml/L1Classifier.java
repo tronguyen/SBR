@@ -9,9 +9,9 @@ import edu.smu.utils.FileUtils;
 
 public class L1Classifier {
 
-	public void train(String dataRes, String modelRes) throws IOException{
+	public void train(String dataRes, String modelRes, boolean oneClass) throws IOException{
 		SVMTrainer trainer = new SVMTrainer();
-		trainer.train(dataRes, modelRes);
+		trainer.train(dataRes, modelRes, oneClass);
 	}
 
 	public void classify(String testRes, String modelRes, String outputFile) throws IOException{
@@ -50,7 +50,7 @@ public class L1Classifier {
 		}
 	}
 
-	public void testDataFolds(String foldDir) throws IOException{
+	public void testDataFolds(String foldDir, boolean oneClass) throws IOException{
 		String dataset = FileUtils.getBaseName(foldDir);
 		String[] models = new String[]{"UNI", "BIG", "LDA"};
 
@@ -62,12 +62,15 @@ public class L1Classifier {
 
 			for(String model: models){
 				
-				String trainRes = foldPath + "/" + dataset + "_" + model + "_train.txt";
-				String modelRes = foldPath + "/" + dataset + "_" + model + ".model";
-				String testRes = foldPath + "/" + dataset + "_" + model + "_fVector_test.txt";
-				String outputFile = foldPath + "/" + dataset + "_" + model + "_predict.txt";
+				String commonPath = foldPath + "/" + dataset + "_" + model;
+				if(oneClass) commonPath += "_1Class";
+				
+				String trainRes = commonPath + "_train.txt";
+				String modelRes = commonPath + ".model";
+				String testRes = commonPath + "_fVector_test.txt";
+				String outputFile = commonPath + "_predict.txt";
 
-				train(trainRes, modelRes);
+				train(trainRes, modelRes, oneClass);
 				
 				classify(testRes, modelRes, outputFile);
 				System.err.println(dataset + " | " + model);
@@ -77,10 +80,11 @@ public class L1Classifier {
 	}
 
 	public static void main(String[] args) throws IOException{
-		String foldDir = "D:/Program/sm/FinalProject/data/microsoft";
+		String foldDir = "data/Folds/linux";
+		boolean oneClass = true;
 		
 		L1Classifier classifier = new L1Classifier();
-		classifier.testDataFolds(foldDir);
+		classifier.testDataFolds(foldDir, oneClass);
 
 	}
 }
