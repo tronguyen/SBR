@@ -20,7 +20,11 @@ public class DataMerger {
 		Map<String, String> actualLabels = getActualLabel("data/raw2/" + dataset);
 		
 		String[] foldPaths = FileUtils.listName(foldDir, true);
-		String[] models = new String[]{"UNI", "BIG", "LDA"};
+		String[] models = new String[]{
+				"UNI", 
+				"BIG", 
+				"LDA"
+				};
 
 		for(String foldPath: foldPaths){
 			System.out.println("\n------------------------------------------------------------");
@@ -103,10 +107,10 @@ public class DataMerger {
 	public static void main(String[] args) throws IOException{
 		String foldDir = "data/Folds/microsoft";
 		String rawVectorDir = "data/raw";
-		
+		boolean oneClass = false;
 		
 		DataMerger merger = new DataMerger();
-		merger.merge(foldDir, rawVectorDir, true);
+		merger.merge(foldDir, rawVectorDir, oneClass);
 				
 	}
 

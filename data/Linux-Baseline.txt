@@ -1,0 +1,1020 @@
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/linux/Fold1
+*
+optimization finished, #iter = 345
+nu = 0.5271120078073105
+obj = -179.4486729868896, rho = 0.025882146163139295
+nSV = 293, nBSV = 215
+*
+optimization finished, #iter = 425
+nu = 0.5001458304910394
+obj = -181.41806139776347, rho = 0.049367157674078746
+nSV = 303, nBSV = 226
+*
+optimization finished, #iter = 345
+nu = 0.5455830096982996
+obj = -204.0737410351736, rho = -0.5506583173893723
+nSV = 297, nBSV = 236
+*
+optimization finished, #iter = 316
+nu = 0.6772544679555537
+obj = -198.80142087731426, rho = 0.02639432920635065
+nSV = 298, nBSV = 237
+.*
+optimization finished, #iter = 363
+nu = 0.6507892322541499
+obj = -156.71114419883344, rho = -0.5991362882350072
+nSV = 267, nBSV = 192
+*
+optimization finished, #iter = 312
+nu = 0.5447014932878065
+obj = -150.282382879416, rho = -0.6147650281967303
+nSV = 251, nBSV = 188
+Total nSV = 741
+Accuracy = 81.65137614678899% (89/109) (classification)
+linux | UNI
+*
+optimization finished, #iter = 335
+nu = 0.5849996824058863
+obj = -184.1379276612144, rho = -0.2482946812398483
+nSV = 333, nBSV = 220
+*
+optimization finished, #iter = 375
+nu = 0.48337598950286675
+obj = -153.38247753455045, rho = -0.2570843865786148
+nSV = 330, nBSV = 178
+*
+optimization finished, #iter = 398
+nu = 0.531007698798937
+obj = -160.52651718642105, rho = -0.1998110803922389
+nSV = 328, nBSV = 175
+*
+optimization finished, #iter = 329
+nu = 0.7896801350896132
+obj = -212.1571329447281, rho = -0.17026654830163532
+nSV = 358, nBSV = 257
+*
+optimization finished, #iter = 256
+nu = 0.8661520069753114
+obj = -203.7268220759894, rho = 0.19841370260861318
+nSV = 333, nBSV = 263
+*
+optimization finished, #iter = 386
+nu = 0.6420793671460748
+obj = -156.77192487534631, rho = 0.21009567037304827
+nSV = 333, nBSV = 182
+Total nSV = 752
+Accuracy = 91.74311926605505% (100/109) (classification)
+linux | BIG
+*
+optimization finished, #iter = 191
+nu = 0.7276507276507277
+obj = -324.442549952462, rho = -0.6424066695962316
+nSV = 355, nBSV = 342
+*
+optimization finished, #iter = 267
+nu = 0.8257554593823186
+obj = -345.14222846440117, rho = -0.7178848001769323
+nSV = 443, nBSV = 432
+*
+optimization finished, #iter = 197
+nu = 0.7433264887063655
+obj = -329.8700667629985, rho = -0.7127397951466384
+nSV = 366, nBSV = 354
+*
+optimization finished, #iter = 188
+nu = 0.8771929824561403
+obj = -326.511493282721, rho = 0.25768910240466947
+nSV = 352, nBSV = 348
+*
+optimization finished, #iter = 178
+nu = 0.9831460674157303
+obj = -335.5079654231919, rho = 0.5123218894004822
+nSV = 351, nBSV = 349
+*
+optimization finished, #iter = 182
+nu = 0.8938271604938272
+obj = -329.5641721937588, rho = -0.31780299544334406
+nSV = 363, nBSV = 361
+Total nSV = 815
+Accuracy = 49.54128440366973% (54/109) (classification)
+linux | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/linux/Fold10
+*
+optimization finished, #iter = 308
+nu = 0.528356979045764
+obj = -180.18262603121045, rho = -0.15332877033646952
+nSV = 282, nBSV = 218
+*
+optimization finished, #iter = 365
+nu = 0.5027376184721583
+obj = -186.02713287344852, rho = -0.002121387224865116
+nSV = 303, nBSV = 233
+*
+optimization finished, #iter = 340
+nu = 0.5374079961550972
+obj = -206.1456457681647, rho = -0.5924657280624938
+nSV = 302, nBSV = 240
+*
+optimization finished, #iter = 349
+nu = 0.6739865015710742
+obj = -197.1834440844784, rho = 0.13609023076483573
+nSV = 300, nBSV = 231
+*
+optimization finished, #iter = 293
+nu = 0.6632606705430264
+obj = -158.28973294611984, rho = -0.5902338112547522
+nSV = 263, nBSV = 205
+*
+optimization finished, #iter = 291
+nu = 0.5439158247953181
+obj = -150.96926311200696, rho = -0.5194066385849373
+nSV = 253, nBSV = 191
+Total nSV = 748
+Accuracy = 84.90566037735849% (90/106) (classification)
+linux | UNI
+*
+optimization finished, #iter = 337
+nu = 0.5872127862337143
+obj = -184.53475825800453, rho = -0.4274301055612824
+nSV = 334, nBSV = 228
+*
+optimization finished, #iter = 383
+nu = 0.4905539519273898
+obj = -157.12812543207988, rho = -0.28468179170782526
+nSV = 337, nBSV = 185
+*
+optimization finished, #iter = 388
+nu = 0.5255859203068293
+obj = -161.6768197102923, rho = -0.22859123808539722
+nSV = 327, nBSV = 174
+*
+optimization finished, #iter = 315
+nu = 0.7760588779094365
+obj = -207.50280573235185, rho = -0.1570527986242659
+nSV = 354, nBSV = 253
+*
+optimization finished, #iter = 252
+nu = 0.8678234515478802
+obj = -205.6507816137931, rho = 0.3086517040927793
+nSV = 334, nBSV = 268
+*
+optimization finished, #iter = 405
+nu = 0.6286696855767325
+obj = -155.0714296448975, rho = 0.2823951703546416
+nSV = 337, nBSV = 180
+Total nSV = 759
+Accuracy = 83.9622641509434% (89/106) (classification)
+linux | BIG
+*
+optimization finished, #iter = 201
+nu = 0.7056367432150313
+obj = -316.1133484572678, rho = -0.7218218626204713
+nSV = 344, nBSV = 331
+*
+optimization finished, #iter = 237
+nu = 0.8173754910531971
+obj = -348.936524158094, rho = -0.6972392757880963
+nSV = 444, nBSV = 431
+*
+optimization finished, #iter = 204
+nu = 0.75
+obj = -335.1939185357027, rho = -0.7163751144053838
+nSV = 378, nBSV = 365
+*
+optimization finished, #iter = 188
+nu = 0.8600508905852419
+obj = -315.6757791063892, rho = 0.5028835804173654
+nSV = 342, nBSV = 336
+*
+optimization finished, #iter = 182
+nu = 0.952112676056338
+obj = -327.35768474636285, rho = 0.7046544071457456
+nSV = 342, nBSV = 337
+*
+optimization finished, #iter = 191
+nu = 0.9073170731707317
+obj = -331.9919563415905, rho = -0.34112131827817355
+nSV = 374, nBSV = 371
+Total nSV = 815
+Accuracy = 50.0% (53/106) (classification)
+linux | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/linux/Fold2
+*
+optimization finished, #iter = 336
+nu = 0.5208594634512274
+obj = -177.1526438725886, rho = -0.10177397813159242
+nSV = 286, nBSV = 220
+*
+optimization finished, #iter = 406
+nu = 0.5009741936716602
+obj = -185.85382126306843, rho = -0.1866073103065516
+nSV = 313, nBSV = 235
+*
+optimization finished, #iter = 351
+nu = 0.5389624062307563
+obj = -206.03861582329236, rho = -0.5851800752376378
+nSV = 304, nBSV = 230
+*
+optimization finished, #iter = 319
+nu = 0.6719972160447288
+obj = -197.48995523621053, rho = 0.047087567770235546
+nSV = 300, nBSV = 234
+*
+optimization finished, #iter = 335
+nu = 0.6562596500108777
+obj = -158.0575166929545, rho = -0.4538907730393234
+nSV = 265, nBSV = 200
+*
+optimization finished, #iter = 355
+nu = 0.5444915653112206
+obj = -150.7711979590762, rho = -0.4308805536377405
+nSV = 257, nBSV = 187
+Total nSV = 754
+Accuracy = 77.77777777777779% (77/99) (classification)
+linux | UNI
+*
+optimization finished, #iter = 334
+nu = 0.5685492425525878
+obj = -178.95988806708, rho = -0.435595493409518
+nSV = 331, nBSV = 216
+*
+optimization finished, #iter = 376
+nu = 0.47930961210888934
+obj = -153.87777610626145, rho = -0.34529335732201133
+nSV = 332, nBSV = 183
+*
+optimization finished, #iter = 418
+nu = 0.5197691045257516
+obj = -159.27431542661972, rho = -0.2456153886334151
+nSV = 326, nBSV = 167
+*
+optimization finished, #iter = 314
+nu = 0.7720818550680548
+obj = -206.52372997250046, rho = -0.07228854415370986
+nSV = 353, nBSV = 254
+*
+optimization finished, #iter = 277
+nu = 0.8596244094643973
+obj = -205.756725002214, rho = 0.4049748416222164
+nSV = 338, nBSV = 265
+.*
+optimization finished, #iter = 414
+nu = 0.6342437029563648
+obj = -157.02309942940158, rho = 0.29906663915423043
+nSV = 338, nBSV = 179
+Total nSV = 756
+Accuracy = 81.81818181818183% (81/99) (classification)
+linux | BIG
+*
+optimization finished, #iter = 194
+nu = 0.7148760330578512
+obj = -320.31783753398014, rho = -0.6876907305516851
+nSV = 351, nBSV = 338
+*
+optimization finished, #iter = 238
+nu = 0.8154721445171272
+obj = -349.0775154754911, rho = -0.8264123370519948
+nSV = 442, nBSV = 433
+*
+optimization finished, #iter = 208
+nu = 0.751004016064257
+obj = -337.87035823062024, rho = -0.6698284447681853
+nSV = 378, nBSV = 369
+*
+optimization finished, #iter = 185
+nu = 0.8693467336683418
+obj = -321.5057194459565, rho = 0.28931019652195844
+nSV = 347, nBSV = 343
+*
+optimization finished, #iter = 190
+nu = 0.9611111111111112
+obj = -334.1627223027207, rho = 0.6478738906097189
+nSV = 349, nBSV = 342
+*
+optimization finished, #iter = 188
+nu = 0.9077669902912622
+obj = -335.7897803727067, rho = -0.16562518477439886
+nSV = 375, nBSV = 373
+Total nSV = 823
+Accuracy = 54.54545454545454% (54/99) (classification)
+linux | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/linux/Fold3
+*
+optimization finished, #iter = 343
+nu = 0.5263670971821806
+obj = -175.44203456090526, rho = -0.05861699496943894
+nSV = 283, nBSV = 216
+*
+optimization finished, #iter = 358
+nu = 0.5125529024651223
+obj = -185.4981234539957, rho = -0.06795039756462361
+nSV = 303, nBSV = 232
+*
+optimization finished, #iter = 366
+nu = 0.5445152455605211
+obj = -200.92351900185835, rho = -0.5733148109675135
+nSV = 297, nBSV = 224
+*
+optimization finished, #iter = 309
+nu = 0.6801193126187702
+obj = -198.49061925728574, rho = 0.1563198729662493
+nSV = 300, nBSV = 233
+.*
+optimization finished, #iter = 349
+nu = 0.6719403366507147
+obj = -158.26910912729997, rho = -0.3920284207110942
+nSV = 269, nBSV = 196
+*
+optimization finished, #iter = 324
+nu = 0.5610923744929724
+obj = -151.06544151965784, rho = -0.5007488542118496
+nSV = 257, nBSV = 188
+Total nSV = 742
+Accuracy = 80.16528925619835% (97/121) (classification)
+linux | UNI
+*
+optimization finished, #iter = 334
+nu = 0.5858824353533296
+obj = -183.24043224136952, rho = -0.4309314922875148
+nSV = 336, nBSV = 225
+*
+optimization finished, #iter = 357
+nu = 0.4854490848523429
+obj = -153.25876223413763, rho = -0.2665242027292578
+nSV = 326, nBSV = 185
+*
+optimization finished, #iter = 353
+nu = 0.5390831636739836
+obj = -159.2164901009469, rho = -0.17417217278196007
+nSV = 321, nBSV = 185
+*
+optimization finished, #iter = 335
+nu = 0.7637263195866261
+obj = -202.8975625180546, rho = -0.09167776179484617
+nSV = 351, nBSV = 247
+*
+optimization finished, #iter = 258
+nu = 0.884900159222635
+obj = -202.80920091619873, rho = 0.39978684089623123
+nSV = 336, nBSV = 271
+*
+optimization finished, #iter = 391
+nu = 0.637769682453623
+obj = -151.3039385165778, rho = 0.21727234225587982
+nSV = 324, nBSV = 171
+Total nSV = 745
+Accuracy = 83.47107438016529% (101/121) (classification)
+linux | BIG
+*
+optimization finished, #iter = 199
+nu = 0.7238493723849372
+obj = -322.2706695700258, rho = -0.7487717885706007
+nSV = 353, nBSV = 338
+*
+optimization finished, #iter = 244
+nu = 0.821969696969697
+obj = -343.4406612838452, rho = -0.7489725988032383
+nSV = 439, nBSV = 427
+*
+optimization finished, #iter = 209
+nu = 0.7238493723849372
+obj = -319.59616284276535, rho = -0.6329475981248514
+nSV = 350, nBSV = 340
+*
+optimization finished, #iter = 189
+nu = 0.8737373737373736
+obj = -319.2252142667315, rho = 0.3749760579220104
+nSV = 348, nBSV = 343
+*
+optimization finished, #iter = 173
+nu = 1.0
+obj = -333.86506962776184, rho = 0.08120724558830261
+nSV = 346, nBSV = 346
+*
+optimization finished, #iter = 183
+nu = 0.8737373737373737
+obj = -316.4645939590079, rho = -0.3408596574170529
+nSV = 348, nBSV = 343
+Total nSV = 796
+Accuracy = 47.107438016528924% (57/121) (classification)
+linux | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/linux/Fold4
+*
+optimization finished, #iter = 322
+nu = 0.5253675251970544
+obj = -184.10655374700704, rho = -0.09974805588273522
+nSV = 293, nBSV = 224
+*
+optimization finished, #iter = 378
+nu = 0.4932026781636223
+obj = -184.04053254011427, rho = -0.1689800341734558
+nSV = 307, nBSV = 233
+*
+optimization finished, #iter = 313
+nu = 0.5400726617294268
+obj = -211.6076643235873, rho = -0.6259822965019927
+nSV = 305, nBSV = 244
+*
+optimization finished, #iter = 330
+nu = 0.6718700017280789
+obj = -200.01888712902613, rho = -0.07065998606683707
+nSV = 302, nBSV = 235
+*
+optimization finished, #iter = 341
+nu = 0.6495030398255978
+obj = -163.1317929797011, rho = -0.5463562618634571
+nSV = 272, nBSV = 209
+*
+optimization finished, #iter = 349
+nu = 0.5482497972097965
+obj = -155.2645826656797, rho = -0.4030606404320813
+nSV = 261, nBSV = 188
+Total nSV = 761
+Accuracy = 78.75% (63/80) (classification)
+linux | UNI
+*
+optimization finished, #iter = 356
+nu = 0.5773673691439719
+obj = -186.42567168150228, rho = -0.34258883942243284
+nSV = 340, nBSV = 219
+*
+optimization finished, #iter = 380
+nu = 0.4781047693810373
+obj = -156.90188802269935, rho = -0.36573268809318593
+nSV = 336, nBSV = 179
+*
+optimization finished, #iter = 419
+nu = 0.5216000258931673
+obj = -163.84889293256686, rho = -0.27347000959340034
+nSV = 336, nBSV = 178
+*
+optimization finished, #iter = 315
+nu = 0.7865147520756034
+obj = -214.22501195492714, rho = -0.33161857471061157
+nSV = 363, nBSV = 266
+*
+optimization finished, #iter = 268
+nu = 0.854030323168609
+obj = -209.4308594174605, rho = 0.00110370490850816
+nSV = 345, nBSV = 274
+*
+optimization finished, #iter = 416
+nu = 0.63255737003687
+obj = -160.63499514217327, rho = 0.2760578968524558
+nSV = 347, nBSV = 182
+Total nSV = 777
+Accuracy = 90.0% (72/80) (classification)
+linux | BIG
+*
+optimization finished, #iter = 192
+nu = 0.7246963562753036
+obj = -331.39291906845943, rho = -0.6486845400347409
+nSV = 363, nBSV = 352
+*
+optimization finished, #iter = 244
+nu = 0.8103130755064457
+obj = -348.3710800151557, rho = -0.805807357140798
+nSV = 446, nBSV = 434
+*
+optimization finished, #iter = 232
+nu = 0.7598425196850394
+obj = -346.2621377477094, rho = -0.633271501745422
+nSV = 393, nBSV = 380
+*
+optimization finished, #iter = 195
+nu = 0.8796068796068796
+obj = -330.48024409046275, rho = 0.2351211687956444
+nSV = 361, nBSV = 356
+*
+optimization finished, #iter = 191
+nu = 0.9623655913978495
+obj = -345.31406109313286, rho = 0.656322381881008
+nSV = 360, nBSV = 355
+*
+optimization finished, #iter = 196
+nu = 0.9168646080760094
+obj = -341.9960364327135, rho = -0.12678024869019233
+nSV = 387, nBSV = 383
+Total nSV = 842
+Accuracy = 51.24999999999999% (41/80) (classification)
+linux | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/linux/Fold5
+*
+optimization finished, #iter = 335
+nu = 0.5238944542921529
+obj = -179.60380221446516, rho = -0.038454907090514565
+nSV = 281, nBSV = 218
+*
+optimization finished, #iter = 370
+nu = 0.4916835713824487
+obj = -180.15927396346277, rho = -0.04372754878520007
+nSV = 300, nBSV = 227
+*
+optimization finished, #iter = 363
+nu = 0.534705614956451
+obj = -202.98040207647156, rho = -0.6043144392852029
+nSV = 301, nBSV = 231
+*
+optimization finished, #iter = 339
+nu = 0.6781619517617645
+obj = -193.56751805719514, rho = 0.05897712640699898
+nSV = 294, nBSV = 225
+*
+optimization finished, #iter = 299
+nu = 0.6593740657963553
+obj = -160.59259668347295, rho = -0.413874354450752
+nSV = 262, nBSV = 205
+*
+optimization finished, #iter = 314
+nu = 0.5531726756734072
+obj = -151.1070801972106, rho = -0.5412846114465408
+nSV = 249, nBSV = 186
+Total nSV = 732
+Accuracy = 72.22222222222221% (78/108) (classification)
+linux | UNI
+*
+optimization finished, #iter = 325
+nu = 0.581094828725526
+obj = -185.8597552117617, rho = -0.46482553014083716
+nSV = 329, nBSV = 230
+*
+optimization finished, #iter = 362
+nu = 0.4807199475359489
+obj = -153.86462681368212, rho = -0.33633357110100565
+nSV = 329, nBSV = 187
+*
+optimization finished, #iter = 390
+nu = 0.5187072410393891
+obj = -159.55939082488896, rho = -0.26362346675357884
+nSV = 326, nBSV = 178
+*
+optimization finished, #iter = 315
+nu = 0.7900152777527721
+obj = -206.83237488643775, rho = -0.19719309703965576
+nSV = 351, nBSV = 256
+*
+optimization finished, #iter = 267
+nu = 0.8655201051790202
+obj = -203.95188036900743, rho = 0.3242773356767645
+nSV = 335, nBSV = 264
+*
+optimization finished, #iter = 399
+nu = 0.6444932103749533
+obj = -155.29498347248847, rho = 0.24126835713010225
+nSV = 332, nBSV = 176
+Total nSV = 753
+Accuracy = 81.48148148148148% (88/108) (classification)
+linux | BIG
+*
+optimization finished, #iter = 196
+nu = 0.7051546391752578
+obj = -321.4218604059467, rho = -0.6641059161705045
+nSV = 352, nBSV = 334
+*
+optimization finished, #iter = 239
+nu = 0.8064147195385878
+obj = -344.81547731387974, rho = -0.7911213954030103
+nSV = 436, nBSV = 423
+*
+optimization finished, #iter = 213
+nu = 0.7364185110663984
+obj = -331.8491421796841, rho = -0.7021554349700264
+nSV = 374, nBSV = 360
+*
+optimization finished, #iter = 183
+nu = 0.8769230769230768
+obj = -317.0737751464359, rho = 0.30734683076649455
+nSV = 343, nBSV = 339
+*
+optimization finished, #iter = 185
+nu = 0.9661016949152544
+obj = -328.9572689207433, rho = 0.605483813974872
+nSV = 344, nBSV = 338
+*
+optimization finished, #iter = 186
+nu = 0.9104477611940298
+obj = -329.44750985492755, rho = -0.2973058819770813
+nSV = 367, nBSV = 365
+Total nSV = 812
+Accuracy = 46.2962962962963% (50/108) (classification)
+linux | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/linux/Fold6
+*
+optimization finished, #iter = 316
+nu = 0.5058221334434376
+obj = -170.10026474334546, rho = 0.012614026947169312
+nSV = 281, nBSV = 209
+*
+optimization finished, #iter = 333
+nu = 0.49497680588711174
+obj = -185.1787678722878, rho = -0.13945598740660978
+nSV = 299, nBSV = 233
+*
+optimization finished, #iter = 384
+nu = 0.5355148283924058
+obj = -209.26077226588248, rho = -0.6245593749421581
+nSV = 312, nBSV = 237
+*
+optimization finished, #iter = 337
+nu = 0.661350802090753
+obj = -187.07969617154276, rho = 0.006715809030509475
+nSV = 292, nBSV = 221
+*
+optimization finished, #iter = 339
+nu = 0.6392374905199377
+obj = -148.19732265204652, rho = -0.4673518591249015
+nSV = 256, nBSV = 185
+*
+optimization finished, #iter = 276
+nu = 0.5498350583483279
+obj = -150.89235061170703, rho = -0.36133101916694904
+nSV = 250, nBSV = 194
+Total nSV = 742
+Accuracy = 67.96116504854369% (70/103) (classification)
+linux | UNI
+*
+optimization finished, #iter = 316
+nu = 0.5789416669079533
+obj = -184.28926915665087, rho = -0.2950296705361755
+nSV = 330, nBSV = 220
+*
+optimization finished, #iter = 399
+nu = 0.4778007007156822
+obj = -156.000743214387, rho = -0.23097030390011525
+nSV = 334, nBSV = 182
+*
+optimization finished, #iter = 406
+nu = 0.5250145872957289
+obj = -164.24819544880816, rho = -0.19964121875934437
+nSV = 336, nBSV = 185
+*
+optimization finished, #iter = 325
+nu = 0.786881187050344
+obj = -206.75351024335018, rho = -0.17645971582894016
+nSV = 348, nBSV = 249
+*
+optimization finished, #iter = 268
+nu = 0.8564212687144859
+obj = -197.50872020906965, rho = 0.2811774009130992
+nSV = 327, nBSV = 251
+*
+optimization finished, #iter = 396
+nu = 0.6390397313426569
+obj = -155.20488852559686, rho = 0.26796383212396263
+nSV = 338, nBSV = 181
+Total nSV = 750
+Accuracy = 82.52427184466019% (85/103) (classification)
+linux | BIG
+*
+optimization finished, #iter = 190
+nu = 0.6831275720164609
+obj = -312.6745266822765, rho = -0.6418220481191985
+nSV = 339, nBSV = 324
+*
+optimization finished, #iter = 257
+nu = 0.7963016015241365
+obj = -343.442835800601, rho = -0.6850060309309098
+nSV = 437, nBSV = 425
+*
+optimization finished, #iter = 214
+nu = 0.7301587301587301
+obj = -335.2707014533913, rho = -0.6742200963359426
+nSV = 375, nBSV = 361
+*
+optimization finished, #iter = 183
+nu = 0.8556701030927834
+obj = -311.2448828707991, rho = 0.3810315882561666
+nSV = 335, nBSV = 330
+*
+optimization finished, #iter = 189
+nu = 0.9485714285714284
+obj = -320.53763052308534, rho = 0.7145682291071302
+nSV = 334, nBSV = 329
+*
+optimization finished, #iter = 186
+nu = 0.9064039408866995
+obj = -329.7420500224445, rho = -0.26130906991287156
+nSV = 369, nBSV = 366
+Total nSV = 813
+Accuracy = 39.80582524271845% (41/103) (classification)
+
+------------------------------------------------------------
+linux | LDA
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/linux/Fold7
+*
+optimization finished, #iter = 339
+nu = 0.5196977195783341
+obj = -180.40480278753026, rho = -0.12603039835100546
+nSV = 291, nBSV = 222
+*
+optimization finished, #iter = 369
+nu = 0.48491681591098823
+obj = -179.34248456337156, rho = -0.21950194258200262
+nSV = 307, nBSV = 226
+*
+optimization finished, #iter = 372
+nu = 0.5392681958947971
+obj = -212.49713278722166, rho = -0.5571120046584865
+nSV = 312, nBSV = 240
+*
+optimization finished, #iter = 350
+nu = 0.6781100590242135
+obj = -200.942246963311, rho = 0.032727258666820656
+nSV = 306, nBSV = 234
+*
+optimization finished, #iter = 333
+nu = 0.6568606597942566
+obj = -167.00565198069404, rho = -0.4632196005054084
+nSV = 277, nBSV = 211
+*
+optimization finished, #iter = 338
+nu = 0.5521907943375797
+obj = -153.7531463332102, rho = -0.45015762132206355
+nSV = 260, nBSV = 187
+Total nSV = 765
+Accuracy = 87.34177215189874% (69/79) (classification)
+linux | UNI
+*
+optimization finished, #iter = 365
+nu = 0.5687793482460433
+obj = -184.46690698187837, rho = -0.3371095361893679
+nSV = 342, nBSV = 216
+*
+optimization finished, #iter = 383
+nu = 0.47971097842394883
+obj = -155.77599512272243, rho = -0.31796844648737593
+nSV = 338, nBSV = 186
+*
+optimization finished, #iter = 407
+nu = 0.5176861850437214
+obj = -163.44657837700407, rho = -0.1965823886161566
+nSV = 341, nBSV = 177
+*
+optimization finished, #iter = 335
+nu = 0.7827769644595638
+obj = -212.58099249514808, rho = -0.11299219042992145
+nSV = 364, nBSV = 260
+*
+optimization finished, #iter = 271
+nu = 0.8611833871377127
+obj = -211.11605789078428, rho = 0.2137451817713926
+nSV = 347, nBSV = 277
+.*
+optimization finished, #iter = 425
+nu = 0.6376273981868109
+obj = -159.34771028917098, rho = 0.2575643638976114
+nSV = 344, nBSV = 182
+Total nSV = 775
+Accuracy = 86.07594936708861% (68/79) (classification)
+linux | BIG
+*
+optimization finished, #iter = 208
+nu = 0.7214428857715431
+obj = -331.55394629297547, rho = -0.6218904529415256
+nSV = 367, nBSV = 352
+*
+optimization finished, #iter = 258
+nu = 0.8018097090640378
+obj = -347.46303886903485, rho = -0.7591059798666243
+nSV = 443, nBSV = 431
+*
+optimization finished, #iter = 224
+nu = 0.7514677103718199
+obj = -345.0300128347889, rho = -0.6933882140958221
+nSV = 391, nBSV = 375
+*
+optimization finished, #iter = 188
+nu = 0.8888888888888887
+obj = -330.96518624021604, rho = 0.15000156746882762
+nSV = 362, nBSV = 359
+*
+optimization finished, #iter = 185
+nu = 0.967741935483871
+obj = -346.2647655089612, rho = 0.6012969613075257
+nSV = 361, nBSV = 359
+*
+optimization finished, #iter = 193
+nu = 0.920863309352518
+obj = -339.2313640648894, rho = -0.07489654421806335
+nSV = 385, nBSV = 383
+Total nSV = 835
+Accuracy = 51.89873417721519% (41/79) (classification)
+linux | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/linux/Fold8
+*
+optimization finished, #iter = 321
+nu = 0.514567046789161
+obj = -177.67977326983166, rho = -0.22245839895996383
+nSV = 286, nBSV = 215
+*
+optimization finished, #iter = 374
+nu = 0.49389105388119986
+obj = -182.9650218767866, rho = -0.1395877247601868
+nSV = 303, nBSV = 228
+*
+optimization finished, #iter = 375
+nu = 0.5459492684160504
+obj = -206.62306990526193, rho = -0.5658124384655147
+nSV = 308, nBSV = 230
+*
+optimization finished, #iter = 318
+nu = 0.6644794108944873
+obj = -196.63521986998163, rho = 0.1499840159297841
+nSV = 297, nBSV = 231
+*
+optimization finished, #iter = 306
+nu = 0.6640657253214173
+obj = -159.07472157387147, rho = -0.42597194273296507
+nSV = 268, nBSV = 205
+*
+optimization finished, #iter = 323
+nu = 0.5613679168221184
+obj = -151.58927446706593, rho = -0.4467152728241813
+nSV = 253, nBSV = 190
+Total nSV = 745
+Accuracy = 75.49019607843137% (77/102) (classification)
+linux | UNI
+*
+optimization finished, #iter = 335
+nu = 0.5809911935225873
+obj = -187.07707909460285, rho = -0.42820081670490623
+nSV = 342, nBSV = 226
+*
+optimization finished, #iter = 399
+nu = 0.4818749052321113
+obj = -156.24334621039054, rho = -0.293734837410614
+nSV = 340, nBSV = 181
+*
+optimization finished, #iter = 400
+nu = 0.5264961746253891
+obj = -160.1887172400248, rho = -0.19404762620737076
+nSV = 329, nBSV = 171
+*
+optimization finished, #iter = 311
+nu = 0.7835084366375998
+obj = -209.73600081200402, rho = -0.09295736937054559
+nSV = 359, nBSV = 257
+*
+optimization finished, #iter = 265
+nu = 0.851927360301907
+obj = -200.471655246946, rho = 0.4404437486489154
+nSV = 333, nBSV = 260
+*
+optimization finished, #iter = 373
+nu = 0.641601915022846
+obj = -155.0019949696834, rho = 0.2743074047611852
+nSV = 332, nBSV = 182
+Total nSV = 755
+Accuracy = 86.27450980392157% (88/102) (classification)
+linux | BIG
+*
+optimization finished, #iter = 203
+nu = 0.7221095334685599
+obj = -329.60236217346153, rho = -0.6887841024805519
+nSV = 361, nBSV = 351
+*
+optimization finished, #iter = 247
+nu = 0.8104758363828286
+obj = -347.15483354657016, rho = -0.8016291095516195
+nSV = 441, nBSV = 431
+*
+optimization finished, #iter = 204
+nu = 0.7169042769857433
+obj = -323.7359820018332, rho = -0.72735084959744
+nSV = 359, nBSV = 344
+*
+optimization finished, #iter = 191
+nu = 0.8855721393034826
+obj = -327.09567945176616, rho = 0.22065684519159812
+nSV = 358, nBSV = 354
+*
+optimization finished, #iter = 177
+nu = 0.9943502824858758
+obj = -335.5830006599426, rho = -0.5705671310424805
+nSV = 352, nBSV = 352
+*
+optimization finished, #iter = 181
+nu = 0.88
+obj = -323.07524386775975, rho = -0.3161730539243025
+nSV = 354, nBSV = 350
+Total nSV = 819
+Accuracy = 47.05882352941176% (48/102) (classification)
+linux | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/linux/Fold9
+*
+optimization finished, #iter = 320
+nu = 0.5115475768342665
+obj = -172.23744688413956, rho = -0.12583090943642855
+nSV = 277, nBSV = 210
+*
+optimization finished, #iter = 372
+nu = 0.4955073974816692
+obj = -179.3633540109063, rho = 0.056819886347300605
+nSV = 292, nBSV = 220
+*
+optimization finished, #iter = 320
+nu = 0.5256267607651467
+obj = -200.1422170962945, rho = -0.4613426368623946
+nSV = 292, nBSV = 232
+*
+optimization finished, #iter = 333
+nu = 0.6714386038223276
+obj = -191.87361965647167, rho = 0.2720703639784448
+nSV = 296, nBSV = 230
+*
+optimization finished, #iter = 337
+nu = 0.6361608424749284
+obj = -155.82884125123124, rho = -0.2643902133545129
+nSV = 265, nBSV = 202
+*
+optimization finished, #iter = 326
+nu = 0.5538279901032687
+obj = -155.27015746132687, rho = -0.5134222178794208
+nSV = 257, nBSV = 193
+Total nSV = 742
+Accuracy = 71.15384615384616% (74/104) (classification)
+linux | UNI
+*
+optimization finished, #iter = 321
+nu = 0.5663243750505231
+obj = -176.96814411453258, rho = -0.30418701217887495
+nSV = 323, nBSV = 216
+*
+optimization finished, #iter = 386
+nu = 0.4709406770467287
+obj = -150.16228676000517, rho = -0.17534810524563862
+nSV = 325, nBSV = 171
+*
+optimization finished, #iter = 397
+nu = 0.506076798216419
+obj = -155.63325329016087, rho = -0.08941417663611875
+nSV = 325, nBSV = 166
+*
+optimization finished, #iter = 334
+nu = 0.7739765972062772
+obj = -203.30201141193157, rho = -0.00719355512960397
+nSV = 352, nBSV = 243
+*
+optimization finished, #iter = 275
+nu = 0.8332483115962238
+obj = -201.5905686645082, rho = 0.5346627868115189
+nSV = 337, nBSV = 256
+*
+optimization finished, #iter = 386
+nu = 0.62693474899534
+obj = -155.5744764972436, rho = 0.3473288149721161
+nSV = 336, nBSV = 179
+Total nSV = 759
+Accuracy = 74.03846153846155% (77/104) (classification)
+linux | BIG
+*
+optimization finished, #iter = 194
+nu = 0.7211740041928721
+obj = -316.8287532205274, rho = -0.6291314531380068
+nSV = 351, nBSV = 340
+*
+optimization finished, #iter = 242
+nu = 0.8181818181818182
+obj = -339.5168240625779, rho = -0.7276222875441597
+nSV = 437, nBSV = 426
+*
+optimization finished, #iter = 229
+nu = 0.7701612903225806
+obj = -335.95042201964134, rho = -0.6711120471787934
+nSV = 387, nBSV = 376
+*
+optimization finished, #iter = 191
+nu = 0.870886075949367
+obj = -319.36422215383624, rho = 0.3249226336328165
+nSV = 346, nBSV = 339
+*
+optimization finished, #iter = 186
+nu = 0.9476584022038568
+obj = -330.4024960758486, rho = 0.6207171459988418
+nSV = 347, nBSV = 342
+*
+optimization finished, #iter = 194
+nu = 0.9227053140096618
+obj = -337.43272532819276, rho = -0.15699941064706688
+nSV = 384, nBSV = 381
+Total nSV = 817
+Accuracy = 52.88461538461539% (55/104) (classification)
+linux | LDA

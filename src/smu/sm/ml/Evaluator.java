@@ -3,11 +3,14 @@ package smu.sm.ml;
 import smu.sm.entity.MyDocument;
 import smu.sm.global.Global;
 import smu.sm.processing.DocumentCollector;
+import edu.smu.statistic.StatisticMap;
 import edu.smu.utils.FileUtils;
+import edu.smu.utils.NumberUtils;
 import edu.smu.utils.StringUtils;
 
 public class Evaluator {
-
+	private StatisticMap stat = new StatisticMap();
+	
 	public void evaluateAllFolds(String foldDir, String labeledDirectory){
 		String[] foldPaths = FileUtils.listName(foldDir, true);
 		double totalTest = 0.0;
@@ -59,14 +62,38 @@ public class Evaluator {
 		if(actualLabels.length != predictLabels.length) return -1;
 		int count = 0;
 
-		for(int i = 0; i < actualLabels.length; i++)
-			if(actualLabels[i].equalsIgnoreCase(predictLabels[i]))
+		for(int i = 0; i < actualLabels.length; i++){
+			stat.incr("ClassStat", "Actual-" + actualLabels[i], 1);
+			stat.incr("ClassStat", "Predict-" + predictLabels[i], 1);
+			if(actualLabels[i].equalsIgnoreCase(predictLabels[i])){
+				stat.incr("ClassStat", "Correct-" + actualLabels[i], 1);
 				count++;
+			}
+		}
 
 
 		return (double)count/actualLabels.length;
 	}
 
+	public void singleClassReport(){
+		System.out.println("\nPrecision, recall, F1 by class");
+		
+		for(int i = 1; i <= TARGET_LABELS.length; i++){
+			int actualCount = NumberUtils.parseInt(stat.getValue("ClassStat", "Actual-" + i));
+			int predictCount = NumberUtils.parseInt(stat.getValue("ClassStat", "Predict-" + i));
+			int correctCount = NumberUtils.parseInt(stat.getValue("ClassStat", "Correct-" + i));
+			
+			double p = (double) correctCount / predictCount;
+			double r = (double) correctCount / actualCount;
+			double f = 2*p*r/(p+r);
+			
+			System.out.println(TARGET_LABELS[i-1] 
+				+ "\nPrecision = " + p
+				+ "\nRecall = " + r
+				+ "\nF1 = " + f);
+			System.out.println();
+		}
+	}
 
 
 	public static void main(String[] args){
@@ -79,7 +106,11 @@ public class Evaluator {
 			Evaluator eval = new Evaluator();
 			eval.evaluateAllFolds(foldDir, labeledDirectory);
 			System.out.println("**************************************************************");
+			
+			eval.singleClassReport();
 		}
+		
+		
 	}
 
 }

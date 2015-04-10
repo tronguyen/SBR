@@ -135,7 +135,7 @@ public class DataProcessing {
 				validCLassSet = new HashSet<String>();
 				Random r = new Random();
 				for (String s : tempClassSet) {
-					if (r.nextDouble() < Global.crossvalid) {
+					if (r.nextDouble() > Global.validprob) {
 						trainClassSet.add(s);
 					} else {
 						validCLassSet.add(s);

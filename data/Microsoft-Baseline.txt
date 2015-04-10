@@ -1,0 +1,1020 @@
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/microsoft/Fold1
+*
+optimization finished, #iter = 347
+nu = 0.4530601270654646
+obj = -251.21677522477253, rho = -0.28628286759889265
+nSV = 367, nBSV = 314
+*
+optimization finished, #iter = 298
+nu = 0.34701373233568206
+obj = -168.5564600047659, rho = -0.07850567471267014
+nSV = 266, nBSV = 210
+*
+optimization finished, #iter = 458
+nu = 0.5029774714073781
+obj = -315.03970705532623, rho = -0.3355120351875876
+nSV = 440, nBSV = 383
+*
+optimization finished, #iter = 309
+nu = 0.7093809527335918
+obj = -221.78112943865665, rho = 0.2163585440477
+nSV = 311, nBSV = 261
+*
+optimization finished, #iter = 379
+nu = 0.5283727719220551
+obj = -198.03528905813815, rho = 0.20192201519441927
+nSV = 318, nBSV = 254
+*
+optimization finished, #iter = 309
+nu = 0.41910499088319986
+obj = -128.1652798073816, rho = -0.1790393628248005
+nSV = 230, nBSV = 167
+Total nSV = 911
+Accuracy = 77.77777777777779% (98/126) (classification)
+microsoft | UNI
+*
+optimization finished, #iter = 370
+nu = 0.5148012318457547
+obj = -270.3973256218277, rho = -0.351806140135214
+nSV = 436, nBSV = 338
+*
+optimization finished, #iter = 305
+nu = 0.37410810060622746
+obj = -159.67890463643752, rho = 0.15782541441550463
+nSV = 313, nBSV = 209
+*
+optimization finished, #iter = 411
+nu = 0.5024808544685359
+obj = -255.20956024473375, rho = -0.5077417434715703
+nSV = 471, nBSV = 352
+*
+optimization finished, #iter = 273
+nu = 0.7512424151541934
+obj = -209.4547404610223, rho = 0.935117232802983
+nSV = 338, nBSV = 273
+*
+optimization finished, #iter = 293
+nu = 0.6981370014172398
+obj = -257.8454874222707, rho = -0.4659941823788019
+nSV = 409, nBSV = 345
+*
+optimization finished, #iter = 279
+nu = 0.5250746783539363
+obj = -151.99951533748032, rho = -0.6317946702084337
+nSV = 293, nBSV = 206
+Total nSV = 941
+Accuracy = 87.3015873015873% (110/126) (classification)
+microsoft | BIG
+*
+optimization finished, #iter = 410
+nu = 0.6344086021505376
+obj = -467.46723478859656, rho = -0.9853749339591632
+nSV = 495, nBSV = 448
+*
+optimization finished, #iter = 352
+nu = 0.5036818851251842
+obj = -337.89927002198726, rho = -0.9672365696901758
+nSV = 372, nBSV = 315
+*
+optimization finished, #iter = 387
+nu = 0.7549019607843137
+obj = -587.4222337528023, rho = -0.7485919406211375
+nSV = 628, nBSV = 599
+*
+optimization finished, #iter = 228
+nu = 0.8402948402948403
+obj = -335.5733575943213, rho = -0.775182668876926
+nSV = 352, nBSV = 331
+*
+optimization finished, #iter = 263
+nu = 0.8676470588235293
+obj = -460.0022635054407, rho = 0.9032567124575738
+nSV = 476, nBSV = 467
+*
+optimization finished, #iter = 234
+nu = 0.7139874739039664
+obj = -334.25818377858764, rho = 0.8738184092010426
+nSV = 353, nBSV = 332
+Total nSV = 1066
+Accuracy = 37.301587301587304% (47/126) (classification)
+microsoft | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/microsoft/Fold10
+*
+optimization finished, #iter = 402
+nu = 0.45841755383497007
+obj = -255.54451925006074, rho = -0.22059327329978717
+nSV = 375, nBSV = 314
+*
+optimization finished, #iter = 346
+nu = 0.35129491317352984
+obj = -169.58714135013776, rho = 0.2029234980156186
+nSV = 270, nBSV = 206
+*
+optimization finished, #iter = 362
+nu = 0.5101221390952743
+obj = -316.95647143156566, rho = -0.1419289957855059
+nSV = 437, nBSV = 392
+*
+optimization finished, #iter = 282
+nu = 0.7262344842604456
+obj = -226.92436820962342, rho = 0.3204424824658603
+nSV = 318, nBSV = 275
+*
+optimization finished, #iter = 361
+nu = 0.5371810178090466
+obj = -201.07437061968525, rho = 0.28387668997091897
+nSV = 321, nBSV = 264
+*
+optimization finished, #iter = 343
+nu = 0.4242250529549477
+obj = -128.56100299446263, rho = -0.28056515481658667
+nSV = 229, nBSV = 162
+Total nSV = 914
+Accuracy = 83.72093023255815% (108/129) (classification)
+microsoft | UNI
+*
+optimization finished, #iter = 373
+nu = 0.5147862698127641
+obj = -270.8814858176078, rho = -0.2986512764902947
+nSV = 435, nBSV = 341
+*
+optimization finished, #iter = 316
+nu = 0.3763441257357307
+obj = -161.62013844476738, rho = 0.33585705564342727
+nSV = 312, nBSV = 209
+*
+optimization finished, #iter = 393
+nu = 0.5009971777285119
+obj = -253.4273113100796, rho = -0.40069922500647953
+nSV = 469, nBSV = 358
+*
+optimization finished, #iter = 276
+nu = 0.7483760671739575
+obj = -208.85415057751686, rho = 1.0301074817528348
+nSV = 338, nBSV = 264
+*
+optimization finished, #iter = 333
+nu = 0.6911297933174498
+obj = -257.8118274069834, rho = -0.4420689749264203
+nSV = 410, nBSV = 331
+*
+optimization finished, #iter = 278
+nu = 0.5237455966301341
+obj = -150.32294338165477, rho = -0.7341383475977884
+nSV = 293, nBSV = 201
+Total nSV = 937
+Accuracy = 89.14728682170544% (115/129) (classification)
+microsoft | BIG
+*
+optimization finished, #iter = 458
+nu = 0.6370967741935483
+obj = -470.21257604754766, rho = -0.9968667106450738
+nSV = 503, nBSV = 450
+*
+optimization finished, #iter = 294
+nu = 0.504424778761062
+obj = -337.9890246188145, rho = -0.9911020890637224
+nSV = 367, nBSV = 313
+*
+optimization finished, #iter = 387
+nu = 0.7512315270935961
+obj = -581.4645272078809, rho = -0.7638567814986079
+nSV = 626, nBSV = 590
+*
+optimization finished, #iter = 234
+nu = 0.8382352941176472
+obj = -335.9439586658486, rho = -0.8153821488561229
+nSV = 353, nBSV = 329
+*
+optimization finished, #iter = 260
+nu = 0.874538745387454
+obj = -461.27377512513766, rho = 0.916051100790406
+nSV = 477, nBSV = 470
+*
+optimization finished, #iter = 226
+nu = 0.7184873949579832
+obj = -333.98723026263144, rho = 0.886539592772962
+nSV = 353, nBSV = 334
+Total nSV = 1071
+Accuracy = 37.2093023255814% (48/129) (classification)
+microsoft | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/microsoft/Fold2
+*
+optimization finished, #iter = 368
+nu = 0.46182310039835517
+obj = -253.1501868435159, rho = -0.3715012992093964
+nSV = 363, nBSV = 316
+*
+optimization finished, #iter = 279
+nu = 0.3564808090049217
+obj = -167.61517193949865, rho = -0.03515838805563307
+nSV = 265, nBSV = 209
+*
+optimization finished, #iter = 431
+nu = 0.5214540629984094
+obj = -318.3018727846604, rho = -0.42424324906444516
+nSV = 443, nBSV = 387
+*
+optimization finished, #iter = 282
+nu = 0.7177050123063448
+obj = -219.79739905924964, rho = 0.27034317089511656
+nSV = 311, nBSV = 266
+*
+optimization finished, #iter = 342
+nu = 0.5399767716105757
+obj = -201.560508644474, rho = 0.2843266902672522
+nSV = 318, nBSV = 265
+*
+optimization finished, #iter = 330
+nu = 0.4132292660865609
+obj = -125.6521506763612, rho = -0.29836723629202416
+nSV = 229, nBSV = 165
+Total nSV = 908
+Accuracy = 82.87671232876713% (121/146) (classification)
+microsoft | UNI
+*
+optimization finished, #iter = 355
+nu = 0.51650132574201
+obj = -268.3335825138462, rho = -0.2952693723466745
+nSV = 426, nBSV = 333
+*
+optimization finished, #iter = 298
+nu = 0.3816446219441918
+obj = -160.36170251105122, rho = 0.347932123488201
+nSV = 306, nBSV = 205
+*
+optimization finished, #iter = 384
+nu = 0.507070543969412
+obj = -252.5829758425532, rho = -0.43428159815303896
+nSV = 463, nBSV = 359
+*
+optimization finished, #iter = 275
+nu = 0.7553001593541544
+obj = -209.87380819967956, rho = 1.0082182702245313
+nSV = 335, nBSV = 269
+*
+optimization finished, #iter = 332
+nu = 0.6965340783306913
+obj = -258.8040742942235, rho = -0.4742449349397627
+nSV = 409, nBSV = 337
+*
+optimization finished, #iter = 285
+nu = 0.5212844226091078
+obj = -149.50487618744162, rho = -0.6731655317720799
+nSV = 289, nBSV = 195
+Total nSV = 935
+Accuracy = 90.41095890410958% (132/146) (classification)
+microsoft | BIG
+*
+optimization finished, #iter = 408
+nu = 0.6474622770919068
+obj = -467.2702020354359, rho = -0.9828822013159599
+nSV = 499, nBSV = 445
+*
+optimization finished, #iter = 335
+nu = 0.5105740181268882
+obj = -333.85891025514434, rho = -0.9688837855980929
+nSV = 367, nBSV = 309
+*
+optimization finished, #iter = 395
+nu = 0.7644110275689223
+obj = -581.0357664348696, rho = -0.6826887777829083
+nSV = 624, nBSV = 591
+*
+optimization finished, #iter = 217
+nu = 0.8345679012345679
+obj = -332.28889086349704, rho = -0.8156899459288701
+nSV = 347, nBSV = 325
+*
+optimization finished, #iter = 254
+nu = 0.8724584103512015
+obj = -459.55072383258624, rho = 0.8953701753706176
+nSV = 475, nBSV = 467
+*
+optimization finished, #iter = 238
+nu = 0.7130801687763713
+obj = -330.49593706889755, rho = 0.8996867727461868
+nSV = 352, nBSV = 329
+Total nSV = 1058
+Accuracy = 42.465753424657535% (62/146) (classification)
+microsoft | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/microsoft/Fold3
+*
+optimization finished, #iter = 370
+nu = 0.4615557532968115
+obj = -252.68455201153077, rho = -0.2376401425253363
+nSV = 368, nBSV = 307
+*
+optimization finished, #iter = 320
+nu = 0.35688053915673573
+obj = -171.4013632066333, rho = -0.04373478030171891
+nSV = 266, nBSV = 210
+*
+optimization finished, #iter = 397
+nu = 0.5065064013531434
+obj = -309.9971978398138, rho = -0.436910703246185
+nSV = 435, nBSV = 379
+*
+optimization finished, #iter = 270
+nu = 0.7150336293578874
+obj = -224.09596221188886, rho = 0.06684064777796435
+nSV = 318, nBSV = 275
+*
+optimization finished, #iter = 398
+nu = 0.5293808156006131
+obj = -200.30655516819968, rho = -0.14090997860957202
+nSV = 323, nBSV = 259
+*
+optimization finished, #iter = 342
+nu = 0.409622301348923
+obj = -126.2498143149546, rho = -0.34468386582438143
+nSV = 232, nBSV = 164
+Total nSV = 918
+Accuracy = 82.03125% (105/128) (classification)
+microsoft | UNI
+*
+optimization finished, #iter = 404
+nu = 0.5153374750814809
+obj = -268.2461655311348, rho = -0.12967456028960003
+nSV = 434, nBSV = 331
+*
+optimization finished, #iter = 342
+nu = 0.3831788685051116
+obj = -163.20069495458918, rho = 0.3049260822627789
+nSV = 320, nBSV = 212
+*
+optimization finished, #iter = 417
+nu = 0.5050929124920749
+obj = -251.60246837330354, rho = -0.5143951110377657
+nSV = 468, nBSV = 350
+*
+optimization finished, #iter = 302
+nu = 0.7557859733890208
+obj = -214.34641522177526, rho = 0.8725642120802691
+nSV = 350, nBSV = 268
+*
+optimization finished, #iter = 326
+nu = 0.6831203054817117
+obj = -254.27658410122277, rho = -0.8556625430734971
+nSV = 408, nBSV = 329
+*
+optimization finished, #iter = 311
+nu = 0.5175652284874145
+obj = -150.8989787283285, rho = -0.77825669714437
+nSV = 294, nBSV = 196
+Total nSV = 945
+Accuracy = 89.0625% (114/128) (classification)
+microsoft | BIG
+*
+optimization finished, #iter = 482
+nu = 0.6467391304347826
+obj = -470.94820420356274, rho = -0.9908341941587434
+nSV = 506, nBSV = 450
+*
+optimization finished, #iter = 377
+nu = 0.5288035450516986
+obj = -353.2156385522235, rho = -0.9787322669440486
+nSV = 387, nBSV = 332
+*
+optimization finished, #iter = 394
+nu = 0.7611940298507462
+obj = -581.7491163050479, rho = -0.7493307406453406
+nSV = 632, nBSV = 592
+*
+optimization finished, #iter = 229
+nu = 0.8585131894484412
+obj = -351.2046304167981, rho = -0.8241108004880607
+nSV = 372, nBSV = 346
+*
+optimization finished, #iter = 263
+nu = 0.8750000000000001
+obj = -461.6378688679109, rho = 0.8908255804279149
+nSV = 479, nBSV = 472
+*
+optimization finished, #iter = 243
+nu = 0.7381443298969074
+obj = -348.9286798269964, rho = 0.8969498782749918
+nSV = 367, nBSV = 349
+Total nSV = 1085
+Accuracy = 44.53125% (57/128) (classification)
+microsoft | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/microsoft/Fold4
+*
+optimization finished, #iter = 338
+nu = 0.4523570613664539
+obj = -253.18341851233131, rho = -0.34522646137745633
+nSV = 363, nBSV = 313
+*
+optimization finished, #iter = 334
+nu = 0.3437905199446211
+obj = -165.35886721639423, rho = -0.0460152567160729
+nSV = 265, nBSV = 203
+*
+optimization finished, #iter = 408
+nu = 0.5083698051910223
+obj = -318.66270490661225, rho = -0.37740772363914926
+nSV = 442, nBSV = 390
+*
+optimization finished, #iter = 240
+nu = 0.7226797775965642
+obj = -222.84835018179155, rho = 0.2978598535879617
+nSV = 311, nBSV = 276
+*
+optimization finished, #iter = 386
+nu = 0.5339835950236316
+obj = -200.0353954152457, rho = 0.21424909836814587
+nSV = 319, nBSV = 258
+*
+optimization finished, #iter = 307
+nu = 0.4038063565642512
+obj = -123.32641113059941, rho = -0.36717354723618933
+nSV = 224, nBSV = 160
+Total nSV = 915
+Accuracy = 83.46456692913385% (106/127) (classification)
+microsoft | UNI
+*
+optimization finished, #iter = 389
+nu = 0.5133102712401977
+obj = -270.8867543619596, rho = -0.3438613919592527
+nSV = 435, nBSV = 337
+*
+optimization finished, #iter = 307
+nu = 0.3709023703852255
+obj = -158.42645227452135, rho = 0.19586000725216682
+nSV = 309, nBSV = 207
+*
+optimization finished, #iter = 391
+nu = 0.5016850863194618
+obj = -255.32042096200527, rho = -0.5238090502933999
+nSV = 467, nBSV = 360
+*
+optimization finished, #iter = 271
+nu = 0.7476344683300804
+obj = -205.99713392137176, rho = 0.9525189401556637
+nSV = 335, nBSV = 264
+*
+optimization finished, #iter = 328
+nu = 0.693305367046419
+obj = -254.30336247680614, rho = -0.5596685520428964
+nSV = 410, nBSV = 335
+*
+optimization finished, #iter = 282
+nu = 0.5126961437295836
+obj = -146.1571455575055, rho = -0.685636673341589
+nSV = 287, nBSV = 194
+Total nSV = 934
+Accuracy = 83.46456692913385% (106/127) (classification)
+microsoft | BIG
+*
+optimization finished, #iter = 480
+nu = 0.6273458445040215
+obj = -463.9275870963799, rho = -0.9914166099074343
+nSV = 500, nBSV = 445
+*
+optimization finished, #iter = 271
+nu = 0.49853372434017595
+obj = -336.15513781695546, rho = -0.9541466542911129
+nSV = 366, nBSV = 314
+*
+optimization finished, #iter = 419
+nu = 0.7481662591687042
+obj = -582.6344469873239, rho = -0.7184835870786396
+nSV = 629, nBSV = 592
+*
+optimization finished, #iter = 215
+nu = 0.8415841584158416
+obj = -334.27306425444806, rho = -0.8258343380904263
+nSV = 351, nBSV = 330
+*
+optimization finished, #iter = 259
+nu = 0.8666666666666667
+obj = -455.4683578992743, rho = 0.8866995666139472
+nSV = 471, nBSV = 463
+*
+optimization finished, #iter = 221
+nu = 0.7142857142857143
+obj = -331.9310426450066, rho = 0.8558391751290855
+nSV = 350, nBSV = 331
+Total nSV = 1066
+Accuracy = 33.85826771653544% (43/127) (classification)
+microsoft | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/microsoft/Fold5
+*
+optimization finished, #iter = 396
+nu = 0.46351110761814845
+obj = -258.26664442341416, rho = -0.1482277998072869
+nSV = 377, nBSV = 318
+*
+optimization finished, #iter = 293
+nu = 0.35756358514604636
+obj = -172.58830156543235, rho = 0.14728157566100994
+nSV = 269, nBSV = 216
+*
+optimization finished, #iter = 393
+nu = 0.5143888445279715
+obj = -320.0615828333181, rho = -0.36924306513405164
+nSV = 448, nBSV = 395
+*
+optimization finished, #iter = 275
+nu = 0.7306154826295961
+obj = -231.3356912922562, rho = 0.24250504394559216
+nSV = 323, nBSV = 280
+*
+optimization finished, #iter = 428
+nu = 0.5262768398595901
+obj = -203.4655159893532, rho = 0.05605055917803817
+nSV = 329, nBSV = 263
+*
+optimization finished, #iter = 344
+nu = 0.41003404749890937
+obj = -128.24216232132352, rho = -0.3872923138246582
+nSV = 236, nBSV = 165
+Total nSV = 935
+Accuracy = 87.93103448275862% (102/116) (classification)
+microsoft | UNI
+*
+optimization finished, #iter = 393
+nu = 0.5193046538217571
+obj = -274.4408060657263, rho = -0.35089776686540347
+nSV = 449, nBSV = 339
+*
+optimization finished, #iter = 316
+nu = 0.3821594184742488
+obj = -162.49594192219342, rho = 0.26268494110178436
+nSV = 317, nBSV = 207
+*
+optimization finished, #iter = 409
+nu = 0.49981372446800765
+obj = -253.37348333420596, rho = -0.5050823493715335
+nSV = 470, nBSV = 354
+*
+optimization finished, #iter = 284
+nu = 0.749961559404568
+obj = -214.15461043571187, rho = 0.9765957881953609
+nSV = 346, nBSV = 272
+*
+optimization finished, #iter = 328
+nu = 0.6942070211468049
+obj = -263.14105729899717, rho = -0.414451741789888
+nSV = 423, nBSV = 349
+*
+optimization finished, #iter = 291
+nu = 0.5214080219122448
+obj = -152.87204204884182, rho = -0.6880128979738237
+nSV = 298, nBSV = 200
+Total nSV = 955
+Accuracy = 91.37931034482759% (106/116) (classification)
+microsoft | BIG
+*
+optimization finished, #iter = 469
+nu = 0.6532797858099063
+obj = -482.95942522586506, rho = -0.9943564934893655
+nSV = 516, nBSV = 468
+*
+optimization finished, #iter = 331
+nu = 0.5118343195266272
+obj = -341.9333884180406, rho = -0.9640922986586788
+nSV = 372, nBSV = 325
+*
+optimization finished, #iter = 398
+nu = 0.7686658506731946
+obj = -594.9284224311887, rho = -0.7536647026304926
+nSV = 646, nBSV = 610
+*
+optimization finished, #iter = 226
+nu = 0.829736211031175
+obj = -340.468443856639, rho = -0.8178334517441675
+nSV = 361, nBSV = 334
+*
+optimization finished, #iter = 263
+nu = 0.8745519713261649
+obj = -474.43650016275075, rho = 0.8806165518383345
+nSV = 489, nBSV = 484
+*
+optimization finished, #iter = 237
+nu = 0.7104722792607804
+obj = -338.5397428768418, rho = 0.8849176714304097
+nSV = 357, nBSV = 333
+Total nSV = 1093
+Accuracy = 45.21739130434783% (52/115) (classification)
+microsoft | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/microsoft/Fold6
+*
+optimization finished, #iter = 378
+nu = 0.46328188118038116
+obj = -255.87353792444793, rho = -0.12018243905922459
+nSV = 377, nBSV = 317
+*
+optimization finished, #iter = 329
+nu = 0.3530657300828876
+obj = -169.22488226742163, rho = 0.042376737066825966
+nSV = 265, nBSV = 210
+*
+optimization finished, #iter = 393
+nu = 0.506431412806866
+obj = -315.48758749254586, rho = -0.3718049633747735
+nSV = 438, nBSV = 385
+*
+optimization finished, #iter = 286
+nu = 0.7143955407908253
+obj = -219.50975176685398, rho = 0.11740386205914108
+nSV = 316, nBSV = 270
+*
+optimization finished, #iter = 352
+nu = 0.528429171506491
+obj = -199.27173810174318, rho = -0.016013682319240205
+nSV = 313, nBSV = 253
+*
+optimization finished, #iter = 321
+nu = 0.40407346149503576
+obj = -122.59793845354217, rho = -0.3171229532309357
+nSV = 225, nBSV = 161
+Total nSV = 911
+Accuracy = 82.57575757575758% (109/132) (classification)
+microsoft | UNI
+*
+optimization finished, #iter = 378
+nu = 0.5212304648790747
+obj = -272.803801667371, rho = -0.30021720504017246
+nSV = 439, nBSV = 341
+*
+optimization finished, #iter = 319
+nu = 0.37609378654981945
+obj = -159.59658714453587, rho = 0.17355176696738955
+nSV = 312, nBSV = 200
+*
+optimization finished, #iter = 447
+nu = 0.5047250529886332
+obj = -253.70689050307, rho = -0.47341342734764
+nSV = 473, nBSV = 348
+*
+optimization finished, #iter = 272
+nu = 0.7498265729093088
+obj = -209.74837543211135, rho = 0.8393330506647435
+nSV = 343, nBSV = 266
+*
+optimization finished, #iter = 327
+nu = 0.6937489054256218
+obj = -257.7984658272235, rho = -0.6091372634495094
+nSV = 412, nBSV = 338
+*
+optimization finished, #iter = 285
+nu = 0.5137490489675952
+obj = -147.268321447309, rho = -0.6571977657455297
+nSV = 290, nBSV = 192
+Total nSV = 955
+Accuracy = 86.36363636363636% (114/132) (classification)
+microsoft | BIG
+*
+optimization finished, #iter = 452
+nu = 0.6415094339622641
+obj = -471.8727116495374, rho = -0.99792524911861
+nSV = 499, nBSV = 446
+*
+optimization finished, #iter = 291
+nu = 0.5066666666666667
+obj = -338.0066992197661, rho = -0.9843773817740642
+nSV = 364, nBSV = 316
+*
+optimization finished, #iter = 405
+nu = 0.754017305315204
+obj = -580.1804226076215, rho = -0.7569323326680933
+nSV = 625, nBSV = 596
+*
+optimization finished, #iter = 219
+nu = 0.8361858190709048
+obj = -336.1334493839216, rho = -0.8238675323060939
+nSV = 352, nBSV = 329
+*
+optimization finished, #iter = 264
+nu = 0.8766114180478821
+obj = -462.63777779386794, rho = 0.8711220111828762
+nSV = 478, nBSV = 471
+*
+optimization finished, #iter = 221
+nu = 0.7184873949579832
+obj = -334.2172236589025, rho = 0.8610547782288078
+nSV = 348, nBSV = 331
+Total nSV = 1071
+Accuracy = 38.93129770992366% (51/131) (classification)
+microsoft | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/microsoft/Fold7
+*
+optimization finished, #iter = 399
+nu = 0.4591053111713473
+obj = -253.61783885245276, rho = -0.33281944949667186
+nSV = 372, nBSV = 315
+*
+optimization finished, #iter = 310
+nu = 0.35001801418970563
+obj = -166.44936851215863, rho = -0.09092270486289092
+nSV = 263, nBSV = 203
+*
+optimization finished, #iter = 399
+nu = 0.5030491098314384
+obj = -307.314120738506, rho = -0.4260086614094594
+nSV = 432, nBSV = 376
+*
+optimization finished, #iter = 288
+nu = 0.7104558411045556
+obj = -223.46125362404723, rho = 0.22448291181115573
+nSV = 318, nBSV = 265
+*
+optimization finished, #iter = 339
+nu = 0.5267700390628041
+obj = -195.14178139402068, rho = 0.21136835430402806
+nSV = 314, nBSV = 256
+*
+optimization finished, #iter = 337
+nu = 0.4189983800453907
+obj = -124.01479168177478, rho = -0.30123678342606036
+nSV = 226, nBSV = 162
+Total nSV = 907
+Accuracy = 79.72027972027972% (114/143) (classification)
+microsoft | UNI
+*
+optimization finished, #iter = 375
+nu = 0.515107102973167
+obj = -269.94466173772275, rho = -0.32197869500875814
+nSV = 440, nBSV = 334
+*
+optimization finished, #iter = 324
+nu = 0.3763780152258798
+obj = -159.873455993033, rho = 0.2142308418187616
+nSV = 307, nBSV = 197
+*
+optimization finished, #iter = 405
+nu = 0.503604528274875
+obj = -247.53016679714798, rho = -0.6970613457587318
+nSV = 453, nBSV = 344
+*
+optimization finished, #iter = 267
+nu = 0.7437382333298537
+obj = -210.48393537486825, rho = 0.976001732429689
+nSV = 339, nBSV = 269
+*
+optimization finished, #iter = 325
+nu = 0.6837577324430738
+obj = -252.47811994939556, rho = -0.7184693245920836
+nSV = 407, nBSV = 325
+*
+optimization finished, #iter = 265
+nu = 0.5200951434576192
+obj = -148.17732335676493, rho = -0.879636369719593
+nSV = 283, nBSV = 200
+Total nSV = 942
+Accuracy = 88.11188811188812% (126/143) (classification)
+microsoft | BIG
+*
+optimization finished, #iter = 393
+nu = 0.6531713900134952
+obj = -478.92179714841865, rho = -0.9512636880159079
+nSV = 511, nBSV = 460
+*
+optimization finished, #iter = 318
+nu = 0.5104477611940299
+obj = -338.0189076056318, rho = -0.9529392509452331
+nSV = 365, nBSV = 317
+*
+optimization finished, #iter = 428
+nu = 0.7430730478589419
+obj = -563.6728559412824, rho = -0.6830037778938041
+nSV = 605, nBSV = 570
+*
+optimization finished, #iter = 235
+nu = 0.8280871670702179
+obj = -336.6038399256181, rho = -0.7900611624138085
+nSV = 354, nBSV = 329
+*
+optimization finished, #iter = 251
+nu = 0.9013035381750465
+obj = -467.5413156622655, rho = 0.8701918214041808
+nSV = 487, nBSV = 479
+*
+optimization finished, #iter = 229
+nu = 0.7339055793991418
+obj = -333.9673316374461, rho = 0.8746780258646724
+nSV = 349, nBSV = 334
+Total nSV = 1056
+Accuracy = 39.436619718309856% (56/142) (classification)
+microsoft | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/microsoft/Fold8
+*
+optimization finished, #iter = 388
+nu = 0.46468816664046103
+obj = -253.1732825680258, rho = -0.21063002055031896
+nSV = 373, nBSV = 314
+*
+optimization finished, #iter = 329
+nu = 0.3522669794251978
+obj = -164.63490390191313, rho = -0.016655996624171453
+nSV = 266, nBSV = 204
+*
+optimization finished, #iter = 397
+nu = 0.5127371147059553
+obj = -313.62177565096766, rho = -0.3837414906759382
+nSV = 438, nBSV = 389
+*
+optimization finished, #iter = 285
+nu = 0.7284277703663828
+obj = -231.34059438959451, rho = 0.17295700987386217
+nSV = 323, nBSV = 277
+*
+optimization finished, #iter = 426
+nu = 0.5219485381909149
+obj = -200.30732701084838, rho = 0.10101917061764262
+nSV = 322, nBSV = 256
+*
+optimization finished, #iter = 382
+nu = 0.4145799122798284
+obj = -128.07668960225868, rho = -0.24975064613537368
+nSV = 238, nBSV = 167
+Total nSV = 916
+Accuracy = 85.49618320610686% (112/131) (classification)
+microsoft | UNI
+*
+optimization finished, #iter = 391
+nu = 0.5211727378206162
+obj = -272.6886050951093, rho = -0.3840219241175814
+nSV = 439, nBSV = 334
+*
+optimization finished, #iter = 311
+nu = 0.38501391666713003
+obj = -161.12429477724052, rho = 0.15348005260637834
+nSV = 312, nBSV = 209
+*
+optimization finished, #iter = 424
+nu = 0.5082195139176584
+obj = -252.15410529322878, rho = -0.4765414840863053
+nSV = 465, nBSV = 354
+*
+optimization finished, #iter = 266
+nu = 0.7547787432497889
+obj = -213.73637676602567, rho = 0.8294193082487351
+nSV = 346, nBSV = 277
+*
+optimization finished, #iter = 330
+nu = 0.6921521600659071
+obj = -262.56161546545684, rho = -0.37443807511009264
+nSV = 416, nBSV = 344
+*
+optimization finished, #iter = 282
+nu = 0.5228350418023396
+obj = -152.09731664307097, rho = -0.6150711356748249
+nSV = 297, nBSV = 202
+Total nSV = 949
+Accuracy = 92.36641221374046% (121/131) (classification)
+microsoft | BIG
+*
+optimization finished, #iter = 468
+nu = 0.6621253405994549
+obj = -480.52036140578576, rho = -0.9862934328986998
+nSV = 516, nBSV = 465
+*
+optimization finished, #iter = 323
+nu = 0.5210843373493976
+obj = -341.3391307272561, rho = -0.9572813266500703
+nSV = 373, nBSV = 316
+*
+optimization finished, #iter = 394
+nu = 0.7755610972568578
+obj = -590.8377611496618, rho = -0.7221906539797229
+nSV = 637, nBSV = 605
+*
+optimization finished, #iter = 252
+nu = 0.8317307692307693
+obj = -339.659566757915, rho = -0.7698643967500943
+nSV = 356, nBSV = 330
+*
+optimization finished, #iter = 276
+nu = 0.8772563176895307
+obj = -472.17051869238566, rho = 0.91371969318707
+nSV = 489, nBSV = 483
+*
+optimization finished, #iter = 232
+nu = 0.7148760330578514
+obj = -338.1290955843692, rho = 0.8831073149352175
+nSV = 358, nBSV = 336
+Total nSV = 1088
+Accuracy = 48.854961832061065% (64/131) (classification)
+microsoft | LDA
+
+------------------------------------------------------------
+Processing fold /Volumes/DATA/Project/Java/SBR/data/Folds/microsoft/Fold9
+*
+optimization finished, #iter = 407
+nu = 0.45774073216448524
+obj = -245.98627322277315, rho = -0.49353061341309956
+nSV = 360, nBSV = 299
+*
+optimization finished, #iter = 345
+nu = 0.35874914378338724
+obj = -165.12109639922153, rho = -0.18079438154252583
+nSV = 268, nBSV = 201
+*
+optimization finished, #iter = 421
+nu = 0.5111335058979966
+obj = -308.5739049848839, rho = -0.48519875351388037
+nSV = 436, nBSV = 380
+*
+optimization finished, #iter = 297
+nu = 0.7201014720191488
+obj = -219.82151126061683, rho = 0.3285488695429652
+nSV = 309, nBSV = 262
+*
+optimization finished, #iter = 366
+nu = 0.5180301450857644
+obj = -196.30384485331467, rho = 0.35484621006003103
+nSV = 316, nBSV = 257
+*
+optimization finished, #iter = 345
+nu = 0.4090879469026311
+obj = -125.24867010243732, rho = -0.21028272781500607
+nSV = 229, nBSV = 160
+Total nSV = 905
+Accuracy = 79.60526315789474% (121/152) (classification)
+microsoft | UNI
+*
+optimization finished, #iter = 375
+nu = 0.5230153864513705
+obj = -262.9847109428113, rho = -0.4912836173049365
+nSV = 431, nBSV = 331
+*
+optimization finished, #iter = 315
+nu = 0.3822451958888106
+obj = -156.88448199480288, rho = 0.08122788040380285
+nSV = 307, nBSV = 199
+*
+optimization finished, #iter = 408
+nu = 0.50938868123824
+obj = -250.3394733526241, rho = -0.5382187286800795
+nSV = 463, nBSV = 350
+*
+optimization finished, #iter = 242
+nu = 0.7576804323037328
+obj = -209.59138376906125, rho = 0.7494129042261711
+nSV = 334, nBSV = 278
+*
+optimization finished, #iter = 309
+nu = 0.6879997963366888
+obj = -257.79044713702643, rho = -0.44356808829177363
+nSV = 411, nBSV = 340
+*
+optimization finished, #iter = 279
+nu = 0.5169768680728999
+obj = -150.69066136661954, rho = -0.550629363634541
+nSV = 288, nBSV = 200
+Total nSV = 928
+Accuracy = 89.47368421052632% (136/152) (classification)
+microsoft | BIG
+*
+optimization finished, #iter = 492
+nu = 0.6554621848739496
+obj = -463.3403295795633, rho = -1.0206791204879666
+nSV = 493, nBSV = 443
+*
+optimization finished, #iter = 282
+nu = 0.5185185185185185
+obj = -331.2384421738019, rho = -0.9569491697233987
+nSV = 360, nBSV = 312
+*
+optimization finished, #iter = 419
+nu = 0.7924528301886793
+obj = -597.3618390221607, rho = -0.7463675314563988
+nSV = 646, nBSV = 613
+*
+optimization finished, #iter = 223
+nu = 0.8358208955223879
+obj = -330.09399017947453, rho = -0.778824782985523
+nSV = 348, nBSV = 325
+*
+optimization finished, #iter = 265
+nu = 0.8524590163934427
+obj = -456.2932656330954, rho = 0.9230020277954415
+nSV = 472, nBSV = 465
+*
+optimization finished, #iter = 220
+nu = 0.6956521739130433
+obj = -328.486258877549, rho = 0.8575025724847487
+nSV = 348, nBSV = 324
+Total nSV = 1074
+Accuracy = 49.34210526315789% (75/152) (classification)
+microsoft | LDA

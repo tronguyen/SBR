@@ -52,7 +52,11 @@ public class L1Classifier {
 
 	public void testDataFolds(String foldDir, boolean oneClass) throws IOException{
 		String dataset = FileUtils.getBaseName(foldDir);
-		String[] models = new String[]{"UNI", "BIG", "LDA"};
+		String[] models = new String[]{
+				"UNI", 
+				"BIG", 
+				"LDA"
+				};
 
 		String[] foldPaths = FileUtils.listName(foldDir, true);
 
@@ -80,8 +84,8 @@ public class L1Classifier {
 	}
 
 	public static void main(String[] args) throws IOException{
-		String foldDir = "data/Folds/linux";
-		boolean oneClass = true;
+		String foldDir = "data/Folds/microsoft";
+		boolean oneClass = false;
 		
 		L1Classifier classifier = new L1Classifier();
 		classifier.testDataFolds(foldDir, oneClass);

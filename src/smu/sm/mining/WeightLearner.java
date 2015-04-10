@@ -47,23 +47,26 @@ public class WeightLearner {
 		BufferedReader br;
 		try {
 			// Read ID list
-			br = new BufferedReader(new FileReader(valid));
-			String idnum = "";
-			while ((idnum = br.readLine()) != null) {
-				q0 = q1 = 0;
-				for (int c = 0; c < clsLst.size(); c++) {
-					ClassifierL2 cls = clsLst.get(c);
-					ins = mpLst.get(c).get(idnum);
-					if (cls.predict(ins) == 0)
-						q0 += w[c];
-					else if (cls.predict(ins) == 1)
-						q1 += w[c];
-					res = (q0 > q1) ? 0 : ((q0 == q1) ? ((new Random()
-							.nextDouble() > 0.5) ? 1 : 0) : 1);
-					if (res != (int) ins.classValue()) {
-						w[c] = w[c] * 0.95;
+			for (int vloop = 0; vloop < Global.vloop; vloop++) {
+				br = new BufferedReader(new FileReader(valid));
+				String idnum = "";
+				while ((idnum = br.readLine()) != null) {
+					q0 = q1 = 0;
+					for (int c = 0; c < clsLst.size(); c++) {
+						ClassifierL2 cls = clsLst.get(c);
+						ins = mpLst.get(c).get(idnum);
+						if (cls.predict(ins) == 0)
+							q0 += w[c];
+						else if (cls.predict(ins) == 1)
+							q1 += w[c];
+						res = (q0 > q1) ? 0 : ((q0 == q1) ? ((new Random()
+								.nextDouble() > 0.5) ? 1 : 0) : 1);
+						if (res != (int) ins.classValue()) {
+							w[c] = w[c] * Global.penalize;
+						}
 					}
 				}
+				br.close();
 			}
 			// Write down weights
 			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(ID

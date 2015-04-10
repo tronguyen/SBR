@@ -27,7 +27,7 @@ val text = {
   TokenizeWith(tokenizer) ~>             // tokenize with tokenizer above
   TermCounter() ~>                       // collect counts (needed below)
   TermMinimumDocumentCountFilter(3) ~>   // filter terms in <4 docs
-  TermDynamicStopListFilter(100) ~>       // filter out 30 most common terms
+  TermDynamicStopListFilter(100) ~>       // filter out 30 most common terms LN=10, MS=100
   DocumentMinimumLengthFilter(0)         // take only docs with >=5 terms
 }
 
@@ -35,7 +35,7 @@ val text = {
 val dataset = LDADataset(text);
 
 // define the model parameters
-val params = LDAModelParams(numTopics = 100, dataset = dataset,
+val params = LDAModelParams(numTopics = 80, dataset = dataset,
   topicSmoothing = 0.01, termSmoothing = 0.01);
 
 // Name of the output model folder to generate

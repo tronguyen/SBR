@@ -56,9 +56,9 @@ public class TestDataProcessing {
 			InterruptedException {
 		// TODO Auto-generated method stub
 		TestDataProcessing test = new TestDataProcessing();
-		 test.testLDARefine();
+		
+//		test.testLDARefine();
 //		test.testCreateCrossData();
-//
 //		ClassifierL2 cls = null;
 //		cls = new LDAClassifier(ClassifierType.LDA);
 //		cls.train();
@@ -67,9 +67,9 @@ public class TestDataProcessing {
 //		cls = new BIGClassifier(ClassifierType.BIG);
 //		cls.train();
 
-//		WeightLearner wl = new WeightLearner();
-//		wl.factorizeWeight();
-//		test.testVoting();
+		WeightLearner wl = new WeightLearner();
+		wl.factorizeWeight();
+		test.testVoting();
 	}
 
 }
