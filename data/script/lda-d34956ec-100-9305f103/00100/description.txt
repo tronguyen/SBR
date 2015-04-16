@@ -1,2 +1,0 @@
-CVB0LDA v0 [Stanford Topic Modeling Toolbox]
-CSVFile("../raw/microsoft_nother.csv") ~> IDColumn(1) ~> Column(3) ~> TokenizeWith(SimpleEnglishTokenizer.V1() ~> CaseFolder() ~> WordsAndNumbersOnlyFilter() ~> MinimumLengthFilter(3)) ~> TermCounter() ~> TermMinimumDocumentCountFilter(3) ~> TermDynamicStopListFilter(100) ~> DocumentMinimumLengthFilter(0)
